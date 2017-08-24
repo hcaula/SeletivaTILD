@@ -1,0 +1,10 @@
+@font-face {
+  font-family: coco-gothic;
+  src: url('../assets/fonts/coco-gothic/CocoGothic-Light_trial.ttf');
+}
+
+@font-face {
+  font-family: coco-gothic;
+  src: url('../assets/fonts/coco-gothic/CocoGothic-SmallCaps-Bold.ttf');
+  font-weight: bold;
+}
