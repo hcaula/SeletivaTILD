@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="./assets/libraries/jquery-3.2.1.min.js"></script>
+  <script src="./assets/database/users.js"></script>
   <meta name="viewport" content="width=device-width">
   <meta charset="UTF-8">
 </head>
@@ -18,25 +19,28 @@
       <div class="title">
         <h3 id="title"> Login </h3>
       </div>
-      <form>
+      <div class="form">
         <div class="input-group">
           <div class="fa-icon">
             <i class="fa fa-user"></i>
           </div>
-          <input class="fa-input" type="text" name="email" placeholder="Seu email"/>
+          <input class="fa-input" type="text" name="email" id="email" placeholder="Seu email"/>
         </div>
         <div class="input-group">
           <div class="fa-icon">
             <i class="fa fa-lock"></i>
           </div>
-          <input class="fa-input" type="password" name="email" placeholder="Sua senha"/>
+          <input class="fa-input" type="password" name="password" id="password" placeholder="Sua senha"/>
+          <div id="wrongPass" class="error" hidden>Senha errada!</div>
+          <div id="userNotFound" class="error" hidden>Usuário não encontrado!</div>
         </div>
         <div class="button-group">
-          <button class="bttn register"> Registre-se! </button>
-          <button class="bttn login-btn"> Login </button>
+          <button class="bttn register"> <b>Registre-se</b> </button>
+          <button onclick="login()" class="bttn login-btn"> <b>Login</b> </button>
         </div>
-      </form>
+      </div>
     </div>
   </div>
+  <script src="./js/login.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ body {
   display: flex;
 }
 
-form {
+.form {
   text-align: center;
   padding: 10px;
 }
@@ -103,7 +103,7 @@ form {
 }
 
 .login-btn {
-  background-color: #659df7;
+  background-color: #648ed1;
 }
 
 #title {
