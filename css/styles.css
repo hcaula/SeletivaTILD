@@ -17,10 +17,6 @@ body {
   display: flex;
 }
 
-header {
-  display: block;
-}
-
 form {
   text-align: center;
   padding: 10px;
@@ -104,6 +100,10 @@ form {
 
 .register {
   background-color: #939eaf;
+}
+
+.login-btn {
+  background-color: #659df7;
 }
 
 #title {
