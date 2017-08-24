@@ -14,4 +14,29 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
+  display: flex;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-box {
+  min-width: 40vw;
+  height: 50vh;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: rgba(211, 221, 237, 0.5);
+}
+
+.title {
+  text-align: center;
+  margin: 0px;
+  border-bottom: 1px solid black;
+}
+
+#title {
+  margin: 0px;
 }
