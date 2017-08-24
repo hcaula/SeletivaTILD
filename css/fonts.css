@@ -8,3 +8,9 @@
   src: url('../assets/fonts/coco-gothic/Coco-Gothic-SmallCaps-Bold.ttf');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: exo;
+  src: url('../assets/fonts/exo/Exo-Regular.ttf');
+  font-weight: bold;
+}

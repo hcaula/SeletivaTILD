@@ -17,6 +17,11 @@ body {
   display: flex;
 }
 
+form {
+  text-align: center;
+  padding: 10px;
+}
+
 .login {
   display: flex;
   align-items: center;
@@ -32,9 +37,40 @@ body {
 
 .title {
   text-align: center;
-  margin: 0px;
+  padding: 10px;
   border-bottom: 1px solid black;
   font-family: coco-gothic;
+}
+
+.input-group {
+  margin: 10px;
+  height: 24px;
+}
+
+.button-group {
+  margin: 20px;
+}
+
+.fa-icon {
+  padding: 4px;
+  width: 20px;
+  text-align: center;
+  background-color: #a4b1c4;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: -4px;
+}
+
+.fa-input {
+  height: 100%;
+  width: 70%;
+  padding-left: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  font-family: exo;
+  font-size: 12px;
 }
 
 #title {
