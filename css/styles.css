@@ -27,16 +27,18 @@ body {
   min-width: 40vw;
   display: inline-block;
   border-radius: 20px;
-  background-color: rgba(211, 221, 237, 0.5);
+  background-color: rgba(211, 221, 237, 0.6);
 }
 
 .title {
   text-align: center;
   margin: 0px;
   border-bottom: 1px solid black;
+  font-family: coco-gothic;
 }
 
 #title {
   margin: 0px;
   font-family: coco-gothic;
+  font-weight: normal;
 }
