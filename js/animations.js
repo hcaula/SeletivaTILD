@@ -41,6 +41,8 @@ $(window).resize(function() {
   else division.show();
 });
 
+
+/* Animate login-box for wrong pass or user */
 errorAnimation = function(){
   var times = 4;
   login_box.animate({
