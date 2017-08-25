@@ -21,13 +21,13 @@ logo.hide();
 login_box.hide();
 
 /* As the background image loads, animate. */
-$("body").ready(function(){
+body.onload = function(){
   logo.fadeIn(1000, function(){});
   login_box.toggle(1000);
   division.animate({
     height: "50%"
   }, 1000);
-});
+};
 
 /* When clicked on input, make it the only window */
 var focused = false;
