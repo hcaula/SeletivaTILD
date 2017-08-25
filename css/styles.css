@@ -35,10 +35,6 @@ body {
   align-content: stretch;
 }
 
-.login-box-cont {
-  display: flex;
-}
-
 .login-box {
   min-width: 40vw;
   display: inline-block;
