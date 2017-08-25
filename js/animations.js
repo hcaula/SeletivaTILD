@@ -1,16 +1,26 @@
+/* Setting variables for easier reading later. */
 var body = document.getElementById("body");
 var logo = $(".logo");
 var division = $(".division");
 var login_box = $(".login-box");
 
+
+/*
+ * Set inner HTML of the division line to none
+ * just so there is some text on the HTML source.
+*/
 document.getElementById("division").innerHTML = "";
 
+
+/* If the window is small, don't display the division line. */
 if(window.innerWidth < 906) division.hide();
 else division.show();
 
+/* Initially hiding elements for animation. */
 logo.hide();
 login_box.css("opacity", 0.0);
 
+/* As the background image loads, animate. */
 body.onload = function(){
   logo.fadeIn(1000, function(){
     login_box.animate({
@@ -22,7 +32,11 @@ body.onload = function(){
   }, 2000);
 }
 
-$( window ).resize(function() {
+/*
+ * Everytime the window is resized, check if
+ * the division can or cannot be there.
+*/
+$(window).resize(function() {
   if(window.innerWidth < 906) division.hide();
   else division.show();
 });
