@@ -9,7 +9,7 @@ var login = function(){
   users.forEach(function(user){
     if(user.email == email) {
       if(user.password == pass) {
-        window.location = "./dashboard.html";
+        window.location = "./subseq/dashboard.html";
         return;
       }
       else wrongPass.hidden = false;
