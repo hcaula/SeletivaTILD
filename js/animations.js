@@ -29,14 +29,19 @@ $("body").ready(function(){
   }, 1000);
 });
 
+/* When clicked on input, make it the only window */
 var focused = false;
 $("input[type=text]").focus(function() {
-  if(!focused){
+  if(!focused && division.is(":visible")){
     logo.toggle("slow");
-    if(division.is(":visible")) division.toggle("slow");
+    division.toggle("slow");
     focused = true;
   }
 });
+
+var togg = function(){
+  $(".login").toggle("Slow");
+}
 
 /*
  * Everytime the window is resized, check if
