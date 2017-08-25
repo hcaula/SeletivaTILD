@@ -17,25 +17,26 @@ body {
   display: flex;
 }
 
-.form {
-  text-align: center;
-  padding: 10px;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .login {
   display: flex;
+  height: 60vh;
+  width: 100vw;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  align-content: stretch;
 }
 
-.logo {
-  margin: 0px;
-  display: inline;
-}
-
-#logo {
-  width: 30%;
-  height: 30%;
+.login-box-cont {
+  display: flex;
 }
 
 .login-box {
@@ -43,6 +44,28 @@ body {
   display: inline-block;
   border-radius: 20px;
   background-color: rgba(211, 221, 237, 0.6);
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 7vh;
+}
+
+.img {
+  height: 100%;
+  text-align: center;
+}
+
+#logo {
+  width: 30%;
+  height: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form {
+  text-align: center;
+  padding: 10px;
 }
 
 .title {

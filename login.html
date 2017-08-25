@@ -14,33 +14,41 @@
 </head>
 
 <body>
-  <div class="login">
-    <div class="login-box">
-      <div class="title">
-        <h3 id="title"> Login </h3>
+  <div class="container">
+    <div class="login">
+      <div class="logo">
+        <div class="img">
+          <img id="logo" src="./assets/imgs/logo.png">
+        </div>
       </div>
-      <div class="form">
-        <div class="input-group">
-          <div class="fa-icon">
-            <i class="fa fa-user"></i>
-          </div>
-          <input class="fa-input" type="text" name="email" id="email" placeholder="Seu email"/>
+      <div class="login-box">
+        <div class="title">
+          <h3 id="title"> Login </h3>
         </div>
-        <div class="input-group">
-          <div class="fa-icon">
-            <i class="fa fa-lock"></i>
+        <div class="form">
+          <div class="input-group">
+            <div class="fa-icon">
+              <i class="fa fa-user"></i>
+            </div>
+            <input class="fa-input" type="text" name="email" id="email" placeholder="Seu email"/>
           </div>
-          <input class="fa-input" type="password" name="password" id="password" placeholder="Sua senha"/>
-          <div id="wrongPass" class="error" hidden>Senha errada!</div>
-          <div id="userNotFound" class="error" hidden>Usuário não encontrado!</div>
-        </div>
-        <div class="button-group">
-          <button class="bttn register"> <b>Registre-se</b> </button>
-          <button onclick="login()" class="bttn login-btn"> <b>Login</b> </button>
+          <div class="input-group">
+            <div class="fa-icon">
+              <i class="fa fa-lock"></i>
+            </div>
+            <input class="fa-input" type="password" name="password" id="password" placeholder="Sua senha"/>
+            <div id="wrongPass" class="error" hidden>Senha errada!</div>
+            <div id="userNotFound" class="error" hidden>Usuário não encontrado!</div>
+          </div>
+          <div class="button-group">
+            <button class="bttn register"> <b>Registre-se</b> </button>
+            <button onclick="login()" class="bttn login-btn"> <b>Login</b> </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script src="./js/login.js"></script>
+
 </body>
 </html>
