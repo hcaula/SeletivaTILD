@@ -22,7 +22,6 @@ textarea, input, button {
   outline: inherit;
 }
 
-
 .container {
   display: flex;
   flex-direction: row;
@@ -127,6 +126,18 @@ textarea, input, button {
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: grey;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f24d4d;
+  font-family: coco-gothic;
+}
+
+.fa-exclamation-circle {
+  margin-right: 5px;
 }
 
 .bttn {
