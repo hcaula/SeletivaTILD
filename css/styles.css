@@ -26,7 +26,7 @@ body {
 
 .login {
   display: flex;
-  height: 60vh;
+  height: 80vh;
   width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,7 +44,6 @@ body {
 
 .logo {
   display: flex;
-  margin-bottom: 7vh;
 }
 
 .img {
@@ -53,8 +52,8 @@ body {
 }
 
 #logo {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   text-align: center;
   margin: 0 auto;
 }
