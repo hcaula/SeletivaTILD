@@ -44,7 +44,6 @@ textarea, input, button {
 .division {
   display: flex;
   width: 2px;
-  height: 50%;
   margin-right: 100px;
   background-color: black;
 }
