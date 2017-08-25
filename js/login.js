@@ -30,6 +30,7 @@ var login = function(){
   if(errorMessage) {
     errorJQ.show();
     errorDOC.innerHTML = '<i class="fa fa-exclamation-circle"></i>' + errorMessage;
+    errorAnimation();
   }
 
 }

@@ -40,3 +40,19 @@ $(window).resize(function() {
   if(window.innerWidth < 906) division.hide();
   else division.show();
 });
+
+errorAnimation = function(){
+  var times = 4;
+  login_box.animate({
+    left: "+=5px"
+  }, 100);
+  login_box.animate({
+    left: "-=10px"
+  }, 100);
+  login_box.animate({
+    left: "+=10px"
+  }, 100);
+  login_box.animate({
+    left: "-=5px"
+  }, 100);
+}

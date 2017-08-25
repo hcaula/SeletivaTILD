@@ -50,6 +50,7 @@ textarea, input, button {
 .login-box {
   min-width: 40vw;
   display: inline-block;
+  position: relative;
   border-radius: 20px;
   background-color: rgba(211, 221, 237, 0.6);
 }
