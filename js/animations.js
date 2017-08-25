@@ -21,7 +21,7 @@ logo.hide();
 login_box.css("opacity", 0.0);
 
 /* As the background image loads, animate. */
-body.onload = function(){
+$("body").ready(function(){
   logo.fadeIn(1000, function(){
     login_box.animate({
       opacity: 1
@@ -30,7 +30,7 @@ body.onload = function(){
   division.animate({
     height: "50%"
   }, 2000);
-}
+});
 
 /*
  * Everytime the window is resized, check if
