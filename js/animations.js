@@ -18,18 +18,24 @@ else division.show();
 
 /* Initially hiding elements for animation. */
 logo.hide();
-login_box.css("opacity", 0.0);
+login_box.hide();
 
 /* As the background image loads, animate. */
 $("body").ready(function(){
-  logo.fadeIn(1000, function(){
-    login_box.animate({
-      opacity: 1
-    }, 1000);
-  });
+  logo.fadeIn(1000, function(){});
+  login_box.toggle(1000);
   division.animate({
     height: "50%"
-  }, 2000);
+  }, 1000);
+});
+
+var focused = false;
+$("input[type=text]").focus(function() {
+  if(!focused){
+    logo.toggle("slow");
+    if(division.is(":visible")) division.toggle("slow");
+    focused = true;
+  }
 });
 
 /*
@@ -38,7 +44,7 @@ $("body").ready(function(){
 */
 $(window).resize(function() {
   if(window.innerWidth < 906) division.hide();
-  else division.show();
+  else if (!focused) division.show();
 });
 
 
