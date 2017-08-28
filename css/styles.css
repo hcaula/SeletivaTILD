@@ -241,12 +241,12 @@ textarea, input {
 
 .side-navbar {
   display: flex;
-  /*position: absolute;*/
-  height: 93vh;
+  min-height: 93vh;
   border: thin solid black;
   min-width: 25vw;
   justify-content: center;
   background-color: white;
+  z-index: 9;
 }
 
 .side-navbar ul {
@@ -265,19 +265,20 @@ textarea, input {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .dashboard-frame {
   margin: 10px;
   height: 40vh;
-  min-width: 25vw;
+  min-width: 250px;
+  /*min-width: 100px;*/
   border: thin solid black;
 }
 
 #statistics {
-  width: 80%;
   height: 80%;
+  /*min-width: 200px;*/
   margin: 0 auto;
   padding-top: 3px;
 }
