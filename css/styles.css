@@ -9,12 +9,15 @@ body {
   border: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+}
+
+.login-body {
   background-image: url('../assets/imgs/nature-blur.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
 }
 
 textarea, input {
