@@ -217,6 +217,7 @@ textarea, input {
   height: auto;
   max-height: 100%;
   max-width: 32px;
+  position:
 }
 
 .logout-top-navbar {
@@ -228,6 +229,8 @@ textarea, input {
 }
 
 .dashboard-body {
+  display: flex;
+  justify-content: flex-start;
   padding-top: 7vh;
 }
 
@@ -238,11 +241,12 @@ textarea, input {
 
 .side-navbar {
   display: flex;
-  float: left;
-  height: 100%;
+  /*position: absolute;*/
+  height: 93vh;
   border: thin solid black;
-  width: 30vw;
+  width: 25vw;
   justify-content: center;
+  background-color: white;
 }
 
 .side-navbar ul {
@@ -255,6 +259,10 @@ textarea, input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.dashboard-content {
+  /*width: 100vw;*/
 }
 
 /* end of dashboard page */

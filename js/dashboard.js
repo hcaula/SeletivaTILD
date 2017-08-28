@@ -24,9 +24,11 @@ var hasSideNavBar = function() {
   if(onSmallScreen()) {
     topNavbarButton.show();
     sideNavbar.hide();
+    sideNavbar.css("position", "absolute");
   } else {
     topNavbarButton.hide();
     sideNavbar.show();
+    sideNavbar.css("position", "inherit");
   }
 }
 
