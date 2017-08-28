@@ -20,6 +20,51 @@ body {
   background-attachment: fixed;
 }
 
+.top-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+
+  border: thin solid black;
+}
+
+.button-top-navbar {
+  border: thin solid black;
+  width: 10vw;
+}
+
+.logo-top-navbar {
+  border: thin solid black;
+  width: 10vw;
+}
+
+.logout-top-navbar {
+  border: thin solid black;
+  width: 10vw;
+}
+
+.dashboard-body {
+  padding-top: 7vh;
+}
+
+.side-navbar {
+  display: flex;
+  float: left;
+  height: 100%;
+  border: thin solid black;
+}
+
+.list-side-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 textarea, input {
   border: thin solid black;
   outline: inherit;
