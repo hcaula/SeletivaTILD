@@ -244,7 +244,7 @@ textarea, input {
   /*position: absolute;*/
   height: 93vh;
   border: thin solid black;
-  width: 25vw;
+  min-width: 25vw;
   justify-content: center;
   background-color: white;
 }
@@ -262,7 +262,27 @@ textarea, input {
 }
 
 .dashboard-content {
-  /*width: 100vw;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
+.dashboard-frame {
+  margin: 10px;
+  height: 40vh;
+  min-width: 25vw;
+  border: thin solid black;
+}
+
+#statistics {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding-top: 3px;
+}
+
+.canvasjs-chart-credit {
+  display: none;
+}
 /* end of dashboard page */
