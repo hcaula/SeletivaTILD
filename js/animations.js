@@ -37,6 +37,15 @@ var initializeLoginPage = function(){
       height: "50%"
     }, 1000);
   };
+
+  /*
+   * Everytime the window is resized, check if
+   * the division can or cannot be there.
+  */
+  $(window).resize(function() {
+    if(window.innerWidth < 906) division.hide();
+    else if (!focused) division.show();
+  });
 }
 
 /* When clicked on input, make it the only window */
@@ -52,16 +61,6 @@ $("input[type=text]").focus(function() {
 var togg = function(){
   $(".login").toggle("Slow");
 }
-
-/*
- * Everytime the window is resized, check if
- * the division can or cannot be there.
-*/
-$(window).resize(function() {
-  if(window.innerWidth < 906) division.hide();
-  else if (!focused) division.show();
-});
-
 
 /* Animate login-box for wrong pass or user */
 var errorAnimation = function(){

@@ -12,8 +12,9 @@ var login = function(){
   var userFound = false;
   var passCheck = false;
 
+  var user;
   for(var i = 0; !userFound && i < users.length; i++) {
-    var user = users[i];
+    user = users[i];
     if(user.email == email) {
       userFound = true;
       if(user.password == pass) passCheck = true;
@@ -21,10 +22,13 @@ var login = function(){
     }
   }
 
+  loggedUser = user;
   if(!userFound) errorMessage = "Usuário não encontrado.";
   else {
     if(!passCheck) errorMessage = "Senha incorreta.";
-    else window.location = "./subseq/dashboard.html";
+    else {
+      window.location = "./subseq/dashboard.html#" + loggedUser.id;
+    }
   }
 
   if(errorMessage) {
