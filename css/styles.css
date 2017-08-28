@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 body {
   position: absolute;
   top: 0;
@@ -12,81 +13,9 @@ body {
   display: flex;
 }
 
-.login-body {
-  background-image: url('../assets/imgs/nature-blur.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+/* end of general */
 
-.top-navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 7vh;
-  width: 100vw;
-  position: fixed;
-  background-color: white;
-  z-index: 10;
-
-  border: thin solid black;
-}
-
-.button-top-navbar {
-  display: flex;
-  border: thin solid black;
-  justify-content: center;
-  min-width: 10vw;
-}
-
-.logo-top-navbar {
-  display: flex;
-  border: thin solid black;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-navbar {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  max-width: 32px;
-}
-
-.logout-top-navbar {
-  border: thin solid black;
-  width: 10vw;
-}
-
-.dashboard-body {
-  padding-top: 7vh;
-}
-
-.appear-sidebar {
-  font-size: 20px;
-}
-
-.side-navbar {
-  display: flex;
-  float: left;
-  height: 100%;
-  border: thin solid black;
-  width: 30vw;
-  justify-content: center;
-}
-
-.side-navbar ul {
-  list-style-type: none;
-  padding: 0px;
-  justify-content: space-evenly;
-}
-
-.list-side-navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+/* LOGIN PAGE */
 
 textarea, input {
   border: thin solid black;
@@ -243,3 +172,89 @@ textarea, input {
   font-family: coco-gothic;
   font-weight: normal;
 }
+
+/* end of login page */
+
+/* DASHBOARD PAGE */
+
+.login-body {
+  background-image: url('../assets/imgs/nature-blur.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+
+  border: thin solid black;
+}
+
+.button-top-navbar {
+  display: flex;
+  border: thin solid black;
+  justify-content: center;
+  min-width: 10vw;
+}
+
+.logo-top-navbar {
+  display: flex;
+  border: thin solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-navbar {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 32px;
+}
+
+.logout-top-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: thin solid black;
+  width: auto;
+}
+
+.dashboard-body {
+  padding-top: 7vh;
+}
+
+.appear-sidebar {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.side-navbar {
+  display: flex;
+  float: left;
+  height: 100%;
+  border: thin solid black;
+  width: 30vw;
+  justify-content: center;
+}
+
+.side-navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  justify-content: space-evenly;
+}
+
+.list-side-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* end of dashboard page */
