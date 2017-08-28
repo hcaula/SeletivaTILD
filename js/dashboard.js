@@ -2,7 +2,6 @@ var topNavbarButton = $(".button-top-navbar");
 var sideNavbar = $(".side-navbar");
 
 var onSmallScreen = function() {
-  console.log(window.innerWidth);
   if(window.innerWidth < 500) return true;
   else return false;
 }
@@ -18,5 +17,18 @@ var hasSideNavBar = function() {
 }
 
 hasSideNavBar();
+
+var visibleSidebar = false;
+var showSidebar = function(){
+  if(!visibleSidebar) {
+    sideNavbar.show();
+    visibleSidebar = true;
+  }
+  else {
+    sideNavbar.hide();
+    visibleSidebar = false;
+  }
+
+}
 
 $(window).resize(hasSideNavBar);
