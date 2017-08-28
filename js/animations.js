@@ -9,7 +9,7 @@ var login_box = $(".login-box");
  * Set inner HTML of the division line to none
  * just so there is some text on the HTML source.
 */
-document.getElementById("division").innerHTML = "";
+// document.getElementById("division").innerHTML = "";
 
 
 /* If the window is small, don't display the division line. */
@@ -21,13 +21,13 @@ logo.hide();
 login_box.hide();
 
 /* As the background image loads, animate. */
-body.onload = function(){
-  logo.fadeIn(1000, function(){});
-  login_box.toggle(1000);
-  division.animate({
-    height: "50%"
-  }, 1000);
-};
+// body.onload = function(){
+//   logo.fadeIn(1000, function(){});
+//   login_box.toggle(1000);
+//   division.animate({
+//     height: "50%"
+//   }, 1000);
+// };
 
 /* When clicked on input, make it the only window */
 var focused = false;
@@ -54,7 +54,7 @@ $(window).resize(function() {
 
 
 /* Animate login-box for wrong pass or user */
-errorAnimation = function(){
+var errorAnimation = function(){
   var times = 4;
   login_box.animate({
     left: "+=5px"
@@ -68,4 +68,8 @@ errorAnimation = function(){
   login_box.animate({
     left: "-=5px"
   }, 100);
+}
+
+var animateSideBar = function(func) {
+  sideNavbar.toggle("slow");
 }

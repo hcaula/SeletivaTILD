@@ -1,9 +1,16 @@
 var topNavbarButton = $(".button-top-navbar");
 var sideNavbar = $(".side-navbar");
+var visibleSidebar = false;
 
 var onSmallScreen = function() {
-  if(window.innerWidth < 500) return true;
-  else return false;
+  if(window.innerWidth < 500) {
+    sideNavbar.css("width", "100vw");
+    return true;
+  }
+  else {
+    sideNavbar.css("width", "30vw");
+    return false;
+  }
 }
 
 var hasSideNavBar = function() {
@@ -18,17 +25,8 @@ var hasSideNavBar = function() {
 
 hasSideNavBar();
 
-var visibleSidebar = false;
 var showSidebar = function(){
-  if(!visibleSidebar) {
-    sideNavbar.show();
-    visibleSidebar = true;
-  }
-  else {
-    sideNavbar.hide();
-    visibleSidebar = false;
-  }
-
+  animateSideBar();
 }
 
 $(window).resize(hasSideNavBar);
