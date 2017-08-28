@@ -7,17 +7,17 @@ var chart = new CanvasJS.Chart("statistics", {
 		{
 			type: "column",
 			dataPoints: [
-				{label: "Janeiro",  y: getRandom()},
-				{label: "Fevereiro", y: getRandom()},
-				{label: "Março", y: getRandom()},
-				{label: "Abril",  y: getRandom()},
-				{label: "Junho",  y: getRandom()},
-        {label: "Julho",  y: getRandom()},
-        {label: "Agosto",  y: getRandom()},
-        {label: "Setembro",  y: getRandom()},
-        {label: "Outubro",  y: getRandom()},
-        {label: "Novembro",  y: getRandom()},
-        {label: "Dezembro",  y: getRandom()}
+				{label: "Jan",  y: getRandom()},
+				{label: "Fev", y: getRandom()},
+				{label: "Mar", y: getRandom()},
+				{label: "Abr",  y: getRandom()},
+				{label: "Jun",  y: getRandom()},
+        {label: "Jul",  y: getRandom()},
+        {label: "Ago",  y: getRandom()},
+        {label: "Set",  y: getRandom()},
+        {label: "Out",  y: getRandom()},
+        {label: "Nov",  y: getRandom()},
+        {label: "Dez",  y: getRandom()}
 			]
 		}
 		]
