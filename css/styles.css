@@ -34,7 +34,9 @@ body {
 }
 
 .button-top-navbar {
+  display: flex;
   border: thin solid black;
+  justify-content: center;
   width: 10vw;
 }
 
@@ -50,6 +52,10 @@ body {
 
 .dashboard-body {
   padding-top: 7vh;
+}
+
+.appear-sidebar {
+  font-size: 20px;
 }
 
 .side-navbar {
