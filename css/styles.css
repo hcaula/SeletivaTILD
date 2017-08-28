@@ -37,12 +37,21 @@ body {
   display: flex;
   border: thin solid black;
   justify-content: center;
-  width: 10vw;
+  min-width: 10vw;
 }
 
 .logo-top-navbar {
+  display: flex;
   border: thin solid black;
-  width: 10vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-navbar {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 32px;
 }
 
 .logout-top-navbar {
