@@ -235,6 +235,20 @@ ul {
   padding: 4px;
 }
 
+.logout-top-navbar button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.userMenu {
+  position: absolute;
+  right: 0;
+  float: right;
+  background-color: red;
+
+  border: thin solid black;
+}
+
 .dashboard-body {
   display: flex;
   justify-content: flex-start;
@@ -248,8 +262,9 @@ ul {
 
 .side-navbar {
   display: flex;
-  min-height: 93vh;
+  /*min-height: 93vh;*/
   border: thin solid black;
+  align-items: stretch;
   min-width: 25vw;
   justify-content: center;
   background-color: white;

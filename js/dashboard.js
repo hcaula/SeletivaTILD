@@ -1,5 +1,6 @@
 var topNavbarButton = $(".button-top-navbar");
 var sideNavbar = $(".side-navbar");
+var userMenu = $(".userMenu");
 var logoutDOM = document.getElementById("logout-top-navbar");
 var todoDOM = document.getElementById("todo-list");
 var newsDOM = document.getElementById("news-list");
@@ -9,8 +10,8 @@ logoutDOM.innerHTML = loggedUser;
 
 var id = parseInt(window.location.hash.substring(1));
 findUser(id);
-logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName;
-logoutDOM.innerHTML += '<button><i class="fa fa-caret-down"></i></button>';
+var userMenuButton = "<button onclick='openUserMenu()'><i class='fa fa-caret-down'></i></button>"
+logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName + userMenuButton;
 
 var onSmallScreen = function() {
   if(window.innerWidth < 500) {
@@ -51,3 +52,7 @@ news.forEach(function(nw){
   var href = nw.link;
   newsDOM.innerHTML += "<li><a href='" + href + "'>" + nw.title + "</a></li>";
 });
+
+var openUserMenu = function(){
+  userMenu.toggle("slow");
+}
