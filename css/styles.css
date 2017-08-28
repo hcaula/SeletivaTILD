@@ -215,6 +215,7 @@ ul {
   border: thin solid black;
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
 }
 
 .logo-navbar {
@@ -231,6 +232,7 @@ ul {
   align-items: center;
   border: thin solid black;
   width: auto;
+  padding: 4px;
 }
 
 .dashboard-body {

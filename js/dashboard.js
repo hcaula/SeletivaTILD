@@ -10,6 +10,7 @@ logoutDOM.innerHTML = loggedUser;
 var id = parseInt(window.location.hash.substring(1));
 findUser(id);
 logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName;
+logoutDOM.innerHTML += '<button><i class="fa fa-caret-down"></i></button>';
 
 var onSmallScreen = function() {
   if(window.innerWidth < 500) {
