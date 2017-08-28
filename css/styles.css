@@ -280,7 +280,7 @@ ul {
   border: thin solid black;
 }
 
-#statistics {
+.chart {
   height: 70%;
   width: 90%;
   /*min-width: 200px;*/
