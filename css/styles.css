@@ -73,6 +73,13 @@ body {
   height: 100%;
   border: thin solid black;
   width: 30vw;
+  justify-content: center;
+}
+
+.side-navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  justify-content: space-evenly;
 }
 
 .list-side-navbar {
