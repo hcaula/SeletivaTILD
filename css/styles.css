@@ -262,7 +262,7 @@ ul {
 
 .side-navbar {
   display: flex;
-  /*min-height: 93vh;*/
+  min-height: 93vh;
   border: thin solid black;
   align-items: stretch;
   min-width: 25vw;
