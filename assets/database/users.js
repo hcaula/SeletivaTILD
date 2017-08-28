@@ -3,7 +3,7 @@ var users = [
   {
     id: 1,
     email: "admin@org.com",
-    password: "123Pass",
+    password: "pass",
     firstName: "Admin",
     lastName: "admin",
     phone: "555-8181"

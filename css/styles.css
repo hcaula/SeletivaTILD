@@ -177,6 +177,11 @@ textarea, input {
 
 /* DASHBOARD PAGE */
 
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
 .login-body {
   background-image: url('../assets/imgs/nature-blur.jpg');
   background-position: top;
@@ -250,8 +255,6 @@ textarea, input {
 }
 
 .side-navbar ul {
-  list-style-type: none;
-  padding: 0px;
   justify-content: space-evenly;
 }
 

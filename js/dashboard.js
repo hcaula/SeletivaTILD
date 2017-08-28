@@ -1,6 +1,7 @@
 var topNavbarButton = $(".button-top-navbar");
 var sideNavbar = $(".side-navbar");
 var logoutDOM = document.getElementById("logout-top-navbar");
+var todoDOM = document.getElementById("todo-list");
 var visibleSidebar = false;
 
 logoutDOM.innerHTML = loggedUser;
@@ -39,3 +40,9 @@ var showSidebar = function(){
 }
 
 $(window).resize(hasSideNavBar);
+
+todoList.forEach(function(task){
+  todoDOM.innerHTML += "<li>";
+  todoDOM.innerHTML += task.description;
+  todoDOM.innerHTML += "</li>"
+});
