@@ -3,23 +3,20 @@ var getRandom = function(){
 }
 
 var chart = new CanvasJS.Chart("statistics", {
-		data: [
-		{
-			type: "column",
-			dataPoints: [
-				{label: "Jan",  y: getRandom()},
-				{label: "Fev", y: getRandom()},
-				{label: "Mar", y: getRandom()},
-				{label: "Abr",  y: getRandom()},
-				{label: "Jun",  y: getRandom()},
-        {label: "Jul",  y: getRandom()},
-        {label: "Ago",  y: getRandom()},
-        {label: "Set",  y: getRandom()},
-        {label: "Out",  y: getRandom()},
-        {label: "Nov",  y: getRandom()},
-        {label: "Dez",  y: getRandom()}
-			]
-		}
-		]
-	});
+  data:
+  [
+    {
+      type: "column",
+      dataPoints: [
+        {label: "1°",  y: getRandom()},
+        {label: "2°", y: getRandom()},
+        {label: "3°", y: getRandom()},
+        {label: "4°",  y: getRandom()}
+      ]
+    },
+  ],
+  axisX: {
+    title: "Trimestre"
+  }
+});
 chart.render();
