@@ -39,9 +39,23 @@
     <div class="side-navbar">
       <ul class="list-side-navbar">
         <li>Dashboard</li>
-        <li>Cadastros</li>
+        <li> Cadastros
+          <button onclick='openSubCat("cad")'><i class='fa fa-caret-down'></i></button>
+          <ul class="subcat" id="cad" hidden>
+            <li class="subCategory">Empresas</li>
+            <li class="subCategory">Usuários</li>
+          </ul>
+        </li>
+
         <li>Estudo de Viabilidade</li>
-        <li>Transações</li>
+        <li>Transações
+          <button onclick='openSubCat("trans")'><i class='fa fa-caret-down'></i></button>
+          <ul class="subt" id="trans" hidden>
+            <li class="subCategory">Minhas Transações</li>
+            <li class="subCategory">Transações de Clientes</li>
+          </ul>
+        </li>
+
       </ul>
     </div>
 

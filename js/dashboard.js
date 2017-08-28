@@ -56,3 +56,7 @@ news.forEach(function(nw){
 var openUserMenu = function(){
   userMenu.toggle("slow");
 }
+
+var openSubCat = function(menu){
+  $("#"+menu).toggle("fast");
+}
