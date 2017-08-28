@@ -2,6 +2,7 @@ var topNavbarButton = $(".button-top-navbar");
 var sideNavbar = $(".side-navbar");
 var logoutDOM = document.getElementById("logout-top-navbar");
 var todoDOM = document.getElementById("todo-list");
+var newsDOM = document.getElementById("news-list");
 var visibleSidebar = false;
 
 logoutDOM.innerHTML = loggedUser;
@@ -42,7 +43,10 @@ var showSidebar = function(){
 $(window).resize(hasSideNavBar);
 
 todoList.forEach(function(task){
-  todoDOM.innerHTML += "<li>";
-  todoDOM.innerHTML += task.description;
-  todoDOM.innerHTML += "</li>"
+  todoDOM.innerHTML += "<li>" + task.description + "</li>";
+});
+
+news.forEach(function(nw){
+  var href = nw.link;
+  newsDOM.innerHTML += "<li><a href='" + href + "'>" + nw.title + "</a></li>";
 });
