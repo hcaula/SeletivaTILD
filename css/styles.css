@@ -237,7 +237,7 @@ ul {
   height: auto;
   max-height: 100%;
   max-width: 32px;
-  position:
+  cursor: pointer;
 }
 
 .logout-top-navbar {
@@ -280,7 +280,7 @@ ul {
 
 .userMenu li {
   color: white;
-  padding: 4px;
+  margin: 20px;
   font-family: coco-gothic;
 }
 
