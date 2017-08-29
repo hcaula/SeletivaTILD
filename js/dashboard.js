@@ -7,8 +7,6 @@ var newsDOM = document.getElementById("news-list");
 var carret = $(".fa-caret-down");
 var visibleSidebar = false;
 
-logoutDOM.innerHTML = loggedUser;
-
 var id = parseInt(window.location.hash.substring(1));
 findUser(id);
 var userMenuButton = "<i class='fa fa-caret-down'></i>"
@@ -78,4 +76,8 @@ var openSubCat = function(menu){
 var getDashboardLink = function(){
   window.location = "./dashboard.html#"+loggedUser.id.toString();
   location.reload();
+}
+
+var getEditUserLink = function(){
+  window.location = "./editUser.html#"+loggedUser.id.toString();
 }
