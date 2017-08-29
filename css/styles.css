@@ -267,10 +267,16 @@ ul {
 .userMenu {
   position: absolute;
   right: 0;
-  float: right;
-  background-color: red;
-
+  background-color: rgba(0,0,0,0.9);
+  z-index: 11;
+  width: 20vw;
   border: thin solid black;
+}
+
+.userMenu li {
+  color: white;
+  padding: 4px;
+  font-family: coco-gothic;
 }
 
 .dashboard-body {
