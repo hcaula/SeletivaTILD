@@ -343,11 +343,11 @@ ul {
   background-color: #177023;
 }
 
-.todo-list {
+.todo-list, .news-list li {
   font-family: Arial;
 }
 
-.todo-list li {
+.todo-list li, .news-list li {
   padding: 10px;
 }
 
@@ -355,8 +355,13 @@ ul {
   font-size: 12px;
 }
 
-.todo-list li:hover {
+.todo-list li:hover, .news-list li:hover{
   background-color: #a8b2c1;
+}
+
+.news-list li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .li-even {

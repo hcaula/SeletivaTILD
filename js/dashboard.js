@@ -55,9 +55,14 @@ todoList.forEach(function(task, i){
   todoDOM.innerHTML += s;
 });
 
-news.forEach(function(nw){
+news.forEach(function(nw, i){
   var href = nw.link;
-  newsDOM.innerHTML += "<li><a href='" + href + "'>" + nw.title + "</a></li>";
+  var s;
+  if (i%2==0) s = "<li class='li-even'>";
+  else s = "<li class='li-odd'>";
+  s += "<div class='task-title'><a href='" + href + "'>" + nw.title + "</a></div>"
+  s += "</li>";
+  newsDOM.innerHTML += s;
 });
 
 var openUserMenu = function(){
