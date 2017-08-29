@@ -204,7 +204,7 @@ ul {
   width: 100vw;
   position: fixed;
   z-index: 10;
-  background-color: #082451;
+  background-color: #051d42;
 
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
@@ -288,6 +288,8 @@ ul {
 .appear-sidebar {
   font-size: 20px;
   cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 .side-navbar {
