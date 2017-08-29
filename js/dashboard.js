@@ -73,3 +73,8 @@ var openUserMenu = function(){
 var openSubCat = function(menu){
   $("#"+menu).toggle("fast");
 }
+
+var getDashboardLink = function(){
+  window.location = "./dashboard.html#"+loggedUser.id.toString();
+  location.reload();
+}

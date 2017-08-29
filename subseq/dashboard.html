@@ -40,19 +40,19 @@
     </div>
     <div class="side-navbar">
       <ul class="list-side-navbar">
-        <li><p><a onclick="location.reload()"<b>Dashboard</b></p></a></li>
-        <li><p><b>Cadastros</b><button onclick='openSubCat("cad")'> <i class='fa fa-caret-down'></i></button></p>
+        <li><a onclick="getDashboardLink()"><b>Dashboard</b></a></li>
+        <li><a onclick='openSubCat("cad")'> <b>Cadastros</b> <i class='fa fa-caret-down'></i></a>
           <ul class="subcat" id="cad" hidden>
-            <li class="subCategory"><p>Empresas</p></li>
-            <li class="subCategory"><p>Usuários</p></li>
+            <li class="subCategory"><a href="./empresasCRUD.html">Empresas</a></li>
+            <li class="subCategory"><a onclick="getDashboardLink()">Usuários</a></li>
           </ul>
         </li>
 
-        <li><p><b>Estudo de Viabilidade</b></li></p>
-        <li><p><b>Transações</b><button onclick='openSubCat("trans")'><i class='fa fa-caret-down'></i></button></p>
+        <li><a onclick="getDashboardLink()"><b>Estudo de Viabilidade</b></a></li>
+        <li><a onclick="openSubCat('trans')"><b>Transações</b><i class='fa fa-caret-down'></i></a>
           <ul class="subt" id="trans" hidden>
-            <li class="subCategory"><p>Minhas Transações</p></li>
-            <li class="subCategory"><p>Transações de Clientes</p></li>
+            <li class="subCategory"><a onclick="getDashboardLink()">Minhas Transações</a></li>
+            <li class="subCategory"><a onclick="getDashboardLink()">Transações de Clientes</a></li>
           </ul>
         </li>
 
