@@ -44,8 +44,15 @@ var showSidebar = function(){
 
 $(window).resize(hasSideNavBar);
 
-todoList.forEach(function(task){
-  todoDOM.innerHTML += "<li>" + task.description + "</li>";
+todoList.forEach(function(task, i){
+  var s;
+  if (i%2==0) s = "<li class='li-even'>";
+  else s = "<li class='li-odd'>";
+  s += "<div class='task-title'>" + task.description + "</div>";
+  s += "<div class='task-local'>" + task.local + "</div>";
+  s += "<div class='task-time'>" + task.time.toUTCString() + "</div>";
+  s += "</li>";
+  todoDOM.innerHTML += s;
 });
 
 news.forEach(function(nw){

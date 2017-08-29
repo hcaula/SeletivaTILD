@@ -343,6 +343,18 @@ ul {
   background-color: #177023;
 }
 
+.todo-list {
+  margin: 10px;
+}
+
+.todo-list li {
+  margin: 10px;
+}
+
+.li-even {
+  background-color: #d0d8e5;
+}
+
 .chart {
   height: 70%;
   width: 90%;
