@@ -244,9 +244,13 @@ ul {
 }
 
 #logout-top-navbar-button {
-  color: #dee1e5;
+  color: white;
   font-size: 15px;
 
+}
+
+.subCategory {
+  font-size: 12px;
 }
 
 .logout-top-navbar button, .side-navbar button {
@@ -295,8 +299,17 @@ ul {
   font-family: coco-gothic;
 }
 
+.fa-caret-down {
+  color: white;
+}
+
 .side-navbar li {
   color: white;
+}
+
+.side-navbar li p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .list-side-navbar {
