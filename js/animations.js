@@ -50,7 +50,7 @@ var initializeLoginPage = function(){
 
 /* When clicked on input, make it the only window */
 var focused = false;
-$("input[type=text]").focus(function() {
+$("input[type=email]").focus(function() {
   if(!focused && division.is(":visible")){
     logo.toggle("slow");
     division.toggle("slow");
