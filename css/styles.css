@@ -344,11 +344,19 @@ ul {
 }
 
 .todo-list {
-  margin: 10px;
+  font-family: Arial;
 }
 
 .todo-list li {
-  margin: 10px;
+  padding: 10px;
+}
+
+.task-local, .task-time {
+  font-size: 12px;
+}
+
+.todo-list li:hover {
+  background-color: #a8b2c1;
 }
 
 .li-even {
