@@ -2,11 +2,11 @@ var loggedUser = {};
 var users = [
   {
     id: 1,
-    email: "admin",
+    email: "admin@org.com",
     password: "pass",
     firstName: "Admin",
     lastName: "admin",
-    phone: "555-5555"
+    phone: "555-8181"
   },
   {
     id: 2,

@@ -19,11 +19,6 @@ a {
   color: inherit;
 }
 
-li a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 /* end of general */
 
 /* LOGIN PAGE */
@@ -320,6 +315,11 @@ ul {
   color: white;
 }
 
+.side-navbar li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .list-side-navbar {
   display: flex;
   flex-direction: column;
@@ -348,31 +348,7 @@ ul {
 }
 
 .dashboard-frame .title {
-  border-bottom: none;
-}
-
-#todo-frame .title  {
-  background-color: #f44242;
-}
-
-#news-frame .title {
-  background-color: #fc9e40;
-}
-
-#sales-frame .title {
-  background-color: #41aefc;
-}
-
-#userbase-frame .title {
-  background-color: #6940fc;
-}
-
-#profit-frame .title {
-  background-color: #40fc8e;
-}
-
-#loss-frame .title {
-  background-color: #fc4040;
+  background-color: #177023;
 }
 
 .todo-list, .news-list li {

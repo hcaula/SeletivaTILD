@@ -12,7 +12,6 @@
   <script src="../assets/database/users.js"></script>
   <script src="../assets/database/todo.js"></script>
   <script src="../assets/database/news.js"></script>
-  <script src="../assets/database/data.js"></script>
   <meta name="viewport" content="width=device-width">
   <meta charset="UTF-8">
 </head>
@@ -34,7 +33,7 @@
   <div class="dashboard-body">
     <div class="userMenu" hidden>
       <ul>
-        <li>Editar perfil</li>
+        <li><a href="./editUser.html"> Editar perfil</a></li>
         <li><a href="../login.html">Logout</a></li>
       </ul>
     </div>
@@ -49,7 +48,7 @@
         </li>
 
         <li><a onclick="getDashboardLink()"><b>Estudo de Viabilidade</b></a></li>
-        <li><a onclick="openSubCat('trans')"><b>Transações</b><i class='fa fa-caret-down'></i></a>
+        <li><a onclick="openSubCat('trans')"><b>Transações </b><i class='fa fa-caret-down'></i></a>
           <ul class="subt" id="trans" hidden>
             <li class="subCategory"><a onclick="getDashboardLink()">Minhas Transações</a></li>
             <li class="subCategory"><a onclick="getDashboardLink()">Transações de Clientes</a></li>
@@ -60,7 +59,7 @@
     </div>
 
     <div class="dashboard-content">
-      <div class="dashboard-frame">
+      <div class="dashboard-frame" id="todo-frame">
         <div class="title">
           To do
         </div>
@@ -69,7 +68,7 @@
           </ul>
         </div>
       </div>
-      <div class="dashboard-frame">
+      <div class="dashboard-frame" id="news-frame">
         <div class="title">
           Notícias
         </div>
@@ -78,28 +77,28 @@
           </ul>
         </div>
       </div>
-      <div class="dashboard-frame">
+      <div class="dashboard-frame" id="sales-frame">
         <div class="title">
           Vendas
         </div>
         <div class="chart" id="sales">
         </div>
       </div>
-      <div class="dashboard-frame">
+      <div class="dashboard-frame" id="userbase-frame">
         <div class="title">
           Usuários
         </div>
         <div class="chart" id="userbase">
         </div>
       </div>
-      <div class="dashboard-frame">
+      <div class="dashboard-frame" id="profit-frame">
         <div class="title">
           Lucro
         </div>
         <div class="chart" id="profit">
         </div>
       </div>
-      <div class="dashboard-frame">
+      <div class="dashboard-frame" id="loss-frame">
         <div class="title">
           Prejuízo
         </div>

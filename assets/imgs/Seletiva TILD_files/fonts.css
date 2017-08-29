@@ -1,0 +1,22 @@
+@font-face {
+  font-family: coco-gothic;
+  src: url('../assets/fonts/coco-gothic/CocoGothic-Light_trial.ttf');
+}
+
+@font-face {
+  font-family: coco-gothic;
+  src: url('../assets/fonts/coco-gothic/Coco-Gothic-SmallCaps-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: exo;
+  src: url('../assets/fonts/exo/Exo-Regular.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: kasse;
+  src: url('../assets/fonts/kasse/KasseFLF.ttf');
+  font-weight: bold;
+}
