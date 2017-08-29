@@ -17,7 +17,9 @@ var sales = new CanvasJS.Chart("sales", {
   ],
   axisX: {
     title: "Trimestre"
-  }
+  },
+  animationEnabled: true,
+  animationDuration: 1000
 });
 
 var userbase = new CanvasJS.Chart("userbase", {
@@ -35,7 +37,9 @@ var userbase = new CanvasJS.Chart("userbase", {
   ],
   axisX: {
     title: "Trimestre"
-  }
+  },
+  animationEnabled: true,
+  animationDuration: 1000
 });
 
 var profit = new CanvasJS.Chart("profit", {
@@ -54,7 +58,9 @@ var profit = new CanvasJS.Chart("profit", {
   ],
   axisX: {
     title: "Trimestre"
-  }
+  },
+  animationEnabled: true,
+  animationDuration: 1000
 });
 
 var loss = new CanvasJS.Chart("loss", {
@@ -72,7 +78,9 @@ var loss = new CanvasJS.Chart("loss", {
   ],
   axisX: {
     title: "Trimestre"
-  }
+  },
+  animationEnabled: true,
+  animationDuration: 1000
 });
 
 sales.render();
