@@ -14,6 +14,11 @@ body {
   background-color: #d0d7e2;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* end of general */
 
 /* LOGIN PAGE */
@@ -198,7 +203,6 @@ ul {
   height: 7vh;
   width: 100vw;
   position: fixed;
-  background-color: white;
   z-index: 10;
   background-color: #082451;
 
@@ -218,6 +222,9 @@ ul {
   align-items: center;
   justify-content: center;
   margin-left: 20px;
+
+  -webkit-filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .logo-navbar {
@@ -234,6 +241,12 @@ ul {
   align-items: center;
   width: auto;
   padding: 4px;
+}
+
+#logout-top-navbar-button {
+  color: #dee1e5;
+  font-size: 15px;
+
 }
 
 .logout-top-navbar button, .side-navbar button {
@@ -260,7 +273,6 @@ ul {
   display: flex;
   justify-content: flex-start;
   padding-top: 7vh;
-  height: 100%;
 }
 
 .appear-sidebar {
@@ -270,8 +282,8 @@ ul {
 
 .side-navbar {
   display: flex;
-  /*min-height: 93vh;*/
-  align-items: stretch;
+  position: fixed;
+  height: 93vh;
   min-width: 25vw;
   justify-content: center;
   background-color: rgba(0,0,0,0.9);

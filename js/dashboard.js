@@ -1,7 +1,7 @@
 var topNavbarButton = $(".button-top-navbar");
 var sideNavbar = $(".side-navbar");
 var userMenu = $(".userMenu");
-var logoutDOM = document.getElementById("logout-top-navbar");
+var logoutDOM = document.getElementById("logout-top-navbar-button");
 var todoDOM = document.getElementById("todo-list");
 var newsDOM = document.getElementById("news-list");
 var visibleSidebar = false;
@@ -10,8 +10,8 @@ logoutDOM.innerHTML = loggedUser;
 
 var id = parseInt(window.location.hash.substring(1));
 findUser(id);
-var userMenuButton = "<button onclick='openUserMenu()'><i class='fa fa-caret-down'></i></button>"
-logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName + userMenuButton;
+var userMenuButton = "<i class='fa fa-caret-down'></i>"
+logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName + " " + userMenuButton;
 
 var onSmallScreen = function() {
   if(window.innerWidth < 500) {
