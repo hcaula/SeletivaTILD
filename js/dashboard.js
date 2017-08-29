@@ -61,6 +61,7 @@ news.forEach(function(nw, i){
   if (i%2==0) s = "<li class='li-even'>";
   else s = "<li class='li-odd'>";
   s += "<div class='task-title'><a href='" + href + "'>" + nw.title + "</a></div>"
+  s += "<div class='task-time'>" + nw.time.toUTCString() + "</div>";
   s += "</li>";
   newsDOM.innerHTML += s;
 });
