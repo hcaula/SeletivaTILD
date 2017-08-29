@@ -81,3 +81,14 @@ var getDashboardLink = function(){
 var getEditUserLink = function(){
   window.location = "./editUser.html#"+loggedUser.id.toString();
 }
+
+curPage = 'dashboard-content'
+var toggleBetween = function(change){
+  if(curPage != change){
+    $('.'+curPage).fadeOut('fast', function(){
+      $('.'+change).fadeIn('fast');
+    });
+    // $('.'+curPage).toggle('fast');
+    // $('.'+change).toggle('fast');
+  }
+}

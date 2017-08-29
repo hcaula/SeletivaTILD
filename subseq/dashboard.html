@@ -42,7 +42,7 @@
         <li><a onclick="getDashboardLink()"><b>Dashboard</b></a></li>
         <li><a onclick='openSubCat("cad")'> <b>Cadastros</b> <i class='fa fa-caret-down'></i></a>
           <ul class="subcat" id="cad" hidden>
-            <li class="subCategory"><a href="./empresasCRUD.html">Empresas</a></li>
+            <li class="subCategory"><a onclick="toggleBetween('companies-content')">Empresas</a></li>
             <li class="subCategory"><a onclick="getDashboardLink()">Usuários</a></li>
           </ul>
         </li>
@@ -106,6 +106,19 @@
         </div>
       </div>
     </div>
+
+    <div class="companies-content" hidden>
+      <div class="dashboard-frame" id="todo-frame">
+        <div class="title">
+          To do
+        </div>
+        <div id="todo" style="overflow-y: scroll; height:80%;">
+          <ul id="todo-list" class="todo-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="../js/animations.js"></script>
   <script src="../js/dashboard.js"></script>
