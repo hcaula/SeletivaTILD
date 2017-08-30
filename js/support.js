@@ -22,7 +22,7 @@ var errorAnimation = function(){
 var getUsernameBttn = function() {
   var id = parseInt(window.location.hash.substring(1));
   findUser(id);
-  var userMenuButton = "<i class='fa fa-caret-down'></i>"
+  var userMenuButton = "<i class='fa fa-caret-down caret-userMenu'></i>"
   logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName + " " + userMenuButton;
 }
 
@@ -49,8 +49,20 @@ var putSideNavBar = function() {
 }
 
 /* Animates sidebar (mobile only) */
-var openMenu = function(id){
+var openMenu = function(id, carret){
   $('#'+id).toggle("slow");
+
+  /* If the link has a down arrow, up it (and vice-versa) */
+  if(carret) {
+    var curClass = $('.'+carret);
+    if (curClass.hasClass('fa-caret-down')) {
+      curClass.removeClass('fa-caret-down');
+      curClass.addClass('fa-caret-up');
+    } else if (curClass.hasClass('fa-caret-up')) {
+      curClass.removeClass('fa-caret-up');
+      curClass.addClass('fa-caret-down');
+    }
+  }
 }
 
 var getLink = function(location){
