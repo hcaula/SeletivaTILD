@@ -230,7 +230,6 @@ ul {
   background-color: rgba(0,0,0,0.9);
   z-index: 11;
   width: 200px;
-  border: thin solid black;
 }
 
 .userMenu li {
@@ -239,16 +238,16 @@ ul {
   font-family: coco-gothic;
 }
 
-/* end of top navbar */
-
-/* SIDE NAVBAR */
-
 .appear-sidebar {
   font-size: 20px;
   cursor: pointer;
   color: white;
   text-shadow: 2px 2px 5px black;
 }
+
+/* end of top navbar */
+
+/* SIDE NAVBAR */
 
 .side-navbar {
   display: flex;
