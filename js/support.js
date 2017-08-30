@@ -18,11 +18,7 @@ var errorAnimation = function(){
   });
 }
 
-/* Make sidebar fit all screen (mobile only) */
-var animateSideBar = function(func) {
-  sideNavbar.toggle("slow");
-}
-
+/* Gets first and last name of logged user to put on the logout button */
 var getUsernameBttn = function() {
   var id = parseInt(window.location.hash.substring(1));
   findUser(id);
@@ -30,16 +26,14 @@ var getUsernameBttn = function() {
   logoutDOM.innerHTML = loggedUser.firstName + " " + loggedUser.lastName + " " + userMenuButton;
 }
 
-var onSmallScreen = function() {
-  if(window.innerWidth < 500) {
 
-    return true;
-  }
-  else {
-    return false;
-  }
+/* Verifies if user is on mobile (values colected via testing) */
+var onSmallScreen = function() {
+  if(window.innerWidth < 500) return true;
+  else return false;
 }
 
+/* Asserts if page should have the sidebar or if it should be hidden */
 var hasSideNavBar = function() {
   if(onSmallScreen()) {
     sideNavbar.css("width", "100vw");
@@ -54,6 +48,7 @@ var hasSideNavBar = function() {
   }
 }
 
+/* Animates sidebar (mobile only) */
 var showSidebar = function(){
-  animateSideBar();
+  sideNavbar.toggle("slow");
 }
