@@ -117,7 +117,7 @@ ul {
   font-size: 20px;
 }
 
-.login-box .fa-input , .companies-expand .fa-input {
+.login-box .fa-input , .companies-expand .fa-input, .editUser-frame .fa-input {
   display: flex;
   width: 200px;
   padding: 0px;
@@ -491,18 +491,17 @@ ul {
 
 .editUser-frame {
   display: flex;
+  flex-direction: column;
   /*min-height: 80vh;*/
   border: thin solid black;
 }
 
-#editInfo {
-  /*min-width: 60vw;
-  min-height: 80vh;*/
-}
-
-#editPass {
-  /*min-width: 40vw;
-  min-height: 60vh;*/
+.userEmail {
+  display: flex;
+  justify-content: center;
+  font-family: caviar;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 /* end of edit user */
