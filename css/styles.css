@@ -401,15 +401,61 @@ ul {
 
 .companies-title {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   font-family: coco-gothic;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.test {
+.companies-title .title {
+  border: none;
+}
+
+.companies-options {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.companies-option {
+  display: flex;
+  width: 100%;
+  border-radius: 30px;
+  flex-direction: column;
   border: thin solid black;
-  height: 10vh;
+}
+
+.companies-option-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-family: caviar;
+  height: 40px;
+}
+
+.companies-option-description {
+  margin-left: 20px;
+
+}
+
+.companies-option-caret {
+  margin-right: 20px;
+}
+
+.companies-option-caret .fa-caret-down {
+  color: black;
+}
+
+.companies-expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+
+  border: thin solid black;
 }
 /* end of companies page */
 
