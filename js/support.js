@@ -32,21 +32,22 @@ var getUsernameBttn = function() {
 
 var onSmallScreen = function() {
   if(window.innerWidth < 500) {
-    sideNavbar.css("width", "100vw");
+
     return true;
   }
   else {
-    sideNavbar.css("width", "30vw");
     return false;
   }
 }
 
 var hasSideNavBar = function() {
   if(onSmallScreen()) {
+    sideNavbar.css("width", "100vw");
     topNavbarButton.show();
     sideNavbar.hide();
     sideNavbar.css("position", "absolute");
   } else {
+    sideNavbar.css("width", "30vw");
     topNavbarButton.hide();
     sideNavbar.show();
     sideNavbar.css("position", "inherit");

@@ -2,12 +2,6 @@ var todoDOM = document.getElementById("todo-list");
 var newsDOM = document.getElementById("news-list");
 var carret = $(".fa-caret-down");
 
-hasSideNavBar();
-
-
-
-$(window).resize(hasSideNavBar);
-
 todoList.forEach(function(task, i){
   var s;
   if (i%2==0) s = "<li class='li-even'>";
