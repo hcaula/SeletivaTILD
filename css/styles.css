@@ -180,7 +180,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 7vh;
+  height: 8vh;
   width: 100vw;
   position: fixed;
   z-index: 10;
@@ -256,7 +256,7 @@ ul {
 .side-navbar {
   display: flex;
   position: fixed;
-  height: 93vh;
+  height: 92vh;
   min-width: 25vw;
   justify-content: center;
   background-color: rgba(0,0,0,0.9);
@@ -291,7 +291,7 @@ ul {
 .dashboard-body {
   display: flex;
   justify-content: flex-start;
-  padding-top: 7vh;
+  padding-top: 8vh;
   width: 100%;
 }
 
@@ -485,7 +485,6 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 20px;
-  height: 100%;
   width: 100vw;
 }
 
@@ -495,11 +494,30 @@ ul {
   margin-bottom: 30px;
   width: 40vw;
   min-width: 280px;
-  border: thin solid black;
+  border-radius: 20px;
+  background-color: white;
+
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
-.editUser-frame .fa-input {
+.editUser-frame .title {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
+.editUserSide {
+  background-color: rgba(0,0,0,0.0);
+  border: none;
+}
+
+#editUserTitle {
+  background-color: #6da5ff;
+}
+
+#changePassTitle {
+  background-color: #f75959;
 }
 
 .userEmail {
