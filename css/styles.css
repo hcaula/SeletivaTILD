@@ -29,6 +29,10 @@ ul {
   padding: 0px;
 }
 
+.fa-caret-down {
+  color: white;
+}
+
 /* end of general */
 
 /* LOGIN PAGE */
@@ -259,23 +263,12 @@ ul {
   z-index: 9;
 }
 
-.side-navbar ul {
-  justify-content: space-evenly;
-  font-family: coco-gothic;
-}
-
-.fa-caret-down {
-  color: white;
-}
-
-.side-navbar li {
-  color: white;
-}
-
 .list-side-navbar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  font-family: coco-gothic;
+  color: white;
 }
 
 .logout-top-navbar button, .side-navbar button {
