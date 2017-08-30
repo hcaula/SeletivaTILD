@@ -159,8 +159,16 @@ var initializeDashboard = function() {
 var initializeNavbar = function() {
   topNavbarButton = $(".button-top-navbar");
   userMenu = $(".userMenu");
+  logoutButton = $("#logout-top-navbar-button");
   logoutDOM = document.getElementById("logout-top-navbar-button");
   getUsernameBttn();
+
+  /* Close userMenu if user clicks on anywhere else */
+  $(document).click(function(e){
+    if(userMenu.is(":visible") && !userMenu.is(e.target) && !logoutButton.is(e.target)) {
+      userMenu.toggle('slow');
+    }
+});
 }
 
 var initializeSidebar = function() {

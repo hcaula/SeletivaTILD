@@ -52,7 +52,7 @@ var putSideNavBar = function() {
 var openMenu = function(id, carret){
   $('#'+id).toggle("slow");
 
-  /* If the link has a down arrow, up it (and vice-versa) */
+  /* If the link or button has a down arrow, up it (and vice-versa) */
   if(carret) {
     var curClass = $('.'+carret);
     if (curClass.hasClass('fa-caret-down')) {
