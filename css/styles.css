@@ -51,7 +51,6 @@ li a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  align-content: stretch;
 }
 
 .division {
@@ -63,8 +62,6 @@ li a:hover {
 
 .login-box {
   min-width: 40vw;
-  display: inline-block;
-  position: relative;
   border-radius: 5px;
   background-color: rgba(247, 246, 244, 0.85);
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
@@ -72,20 +69,13 @@ li a:hover {
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
-.logo {
-  display: flex;
-}
-
 .img {
-  height: 100%;
   text-align: center;
 }
 
 #logo {
   width: 40%;
   height: 40%;
-  text-align: center;
-  margin: 0 auto;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
@@ -115,12 +105,6 @@ li a:hover {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  height: 100%;
-  text-align: center;
-  /*background-color: #a4b1c4;*/
-  background-color: rgba(0,0,0,0.0);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 .fa-input {
@@ -128,14 +112,13 @@ li a:hover {
   width: 200px;
   padding: 0px;
   margin: 0px;
-  /*border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;*/
   border: none;
   border-bottom: thin solid black;
   background-color: rgba(0,0,0,0.0);
   padding-left: 5px;
   font-family: exo;
   font-size: 12px;
+  outline: none;
 }
 
 .fa-input:focus {
@@ -160,8 +143,8 @@ li a:hover {
 
 .bttn {
   background-color: rgba(255,0,0,0.0);
-  display: inline;
   border: none;
+  min-width: 80px;
   height: 40px;
   font-family: coco-gothic;
   font-size: 15px;
