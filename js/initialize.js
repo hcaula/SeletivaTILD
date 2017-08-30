@@ -34,6 +34,9 @@ var initialize = function(page){
     case 'companies':
       initializeCompanies();
       break;
+    case 'editUser':
+      initializeEditUser();
+      break;
   }
 }
 
@@ -170,6 +173,10 @@ var initializeCompanies = function(){
   removeCom.hide();
   searchCom.hide();
   listCom.hide();
+}
+
+var initializeEditUser = function(){
+  initializeNavbar();
 }
 
 /* end of initialize functions */

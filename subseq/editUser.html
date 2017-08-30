@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> Seletiva TILD </title>
+  <link rel="icon" href="../assets/imgs/logo-icon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="../assets/libraries/canvasjs.min.js"></script>
+  <script src="../assets/libraries/jquery-3.2.1.min.js"></script>
+  <script src="../assets/database/users.js"></script>
+  <script src="../js/initialize.js"></script>
+  <script src="../js/support.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="top-navbar">
+    <div class="button-top-navbar">
+      <button onclick="getLink('dashboard')" class="appear-sidebar"> <i class="fa fa-caret-left"></i> Voltar </button>
+    </div>
+    <div class="logo-top-navbar">
+      <a onclick="toggleBetween('dashboard-content')"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png" alt="../assets/imgs/logo.png"/></a>
+    </div>
+    <div class="logout-top-navbar" id="logout-top-navbar">
+      <button onclick="openMenu('userMenu', 'caret-userMenu')" id="logout-top-navbar-button">
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </div>
+  </div>
+  <div class="dashboard-body">
+    <div class="userMenu" id="userMenu" hidden>
+      <ul>
+        <li><a onclick="getLink('editUser')"> Editar perfil</a></li>
+        <li><a href="../login.html">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>initialize('editUser')</script>
+</body>
+
+</html>
