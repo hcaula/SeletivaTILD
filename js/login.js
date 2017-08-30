@@ -2,12 +2,8 @@
 var emailField = document.getElementById("email");
 var passField = document.getElementById("password");
 var errorDOC = document.getElementById("error");
-var errorJQ = $(".error");
 var errorMessage;
 
-
-/* Hiding the div that displays the error message */
-errorJQ.hide();
 
 /* Assert if the user and password are valid */
 var login = function(){
@@ -26,8 +22,8 @@ var login = function(){
     }
   }
 
-  if(!userFound) errorMessage = "Usuário não encontrado.";
-  else if(!passCheck) errorMessage = "Senha incorreta.";
+  if(!userFound) errorMessage = "Usuário não encontrado";
+  else if(!passCheck) errorMessage = "Senha incorreta";
   else {
     window.location = "./subseq/dashboard.html#" + user.id;
 

@@ -3,6 +3,7 @@ var body;
 var logo;
 var division;
 var login_box;
+var errorJQ;
 
 /*
  * Initialize page function: sets the needed variables
@@ -29,6 +30,7 @@ var initializeLogin = function(){
   logo = $(".logo");
   division = $(".division");
   login_box = $(".login-box");
+  errorJQ = $(".error");
 
 
   /*
@@ -42,6 +44,9 @@ var initializeLogin = function(){
      * just so there is some text on the HTML source
     */
     document.getElementById("division").innerHTML = "";
+    
+    /* Hiding the div that displays the error message */
+    errorJQ.hide();
 
     /* If the window is small, don't display the division line */
     if(window.innerWidth < 906) division.hide();
