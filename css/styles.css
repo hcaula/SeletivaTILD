@@ -449,6 +449,13 @@ ul {
   margin-right: 20px;
 }
 
+.companies-option-caret button {
+  background-color: rgba(0,0,0,0.0);
+  border: none;
+  font-size: 20px;
+  outline: none;
+}
+
 .companies-option-caret .fa-caret-down {
   color: black;
 }
@@ -458,8 +465,6 @@ ul {
   align-items: center;
   justify-content: center;
   height: 40vh;
-
-  border: thin solid black;
 }
 
 .companies-expand .form {
@@ -467,7 +472,7 @@ ul {
 }
 
 .companies-expand .fa-input {
-  width: 90%;
+  min-width: 80%;
 }
 
 
