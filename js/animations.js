@@ -88,19 +88,20 @@ var initializeLogin = function(){
 
 /* Animate login-box for wrong pass or user */
 var errorAnimation = function(){
-  var times = 4;
-  login_box.animate({
-    left: "+=5px"
-  }, 100);
-  login_box.animate({
-    left: "-=10px"
-  }, 100);
-  login_box.animate({
-    left: "+=10px"
-  }, 100);
-  login_box.animate({
-    left: "-=5px"
-  }, 100);
+  $(".login-box").ready(function(){
+    login_box.animate({
+      left: "+=5px"
+    }, 100);
+    login_box.animate({
+      left: "-=10px"
+    }, 100);
+    login_box.animate({
+      left: "+=10px"
+    }, 100);
+    login_box.animate({
+      left: "-=5px"
+    }, 100);
+  });
 }
 
 /* Make sidebar fit all screen (mobile only) */
