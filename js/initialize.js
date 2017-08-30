@@ -120,7 +120,7 @@ var initializeDashboard = function() {
   curPage = 'dashboard-content';
 
   /* TEMPORARY FOR COMPANIES PAGE TESTS */
-  $(".dashboard-content").hide();
+  $(".companies-content").hide();
 
   /* Getting the content for the to do and news lists */
   todoList.forEach(function(task, i){
