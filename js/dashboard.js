@@ -88,7 +88,5 @@ var toggleBetween = function(change){
     $('.'+curPage).fadeOut('fast', function(){
       $('.'+change).fadeIn('fast');
     });
-    // $('.'+curPage).toggle('fast');
-    // $('.'+change).toggle('fast');
   }
 }
