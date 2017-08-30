@@ -20,39 +20,39 @@
 <body>
   <div class="top-navbar">
     <div class="button-top-navbar">
-      <button onclick="showSidebar()" class="appear-sidebar"><i class="fa fa-bars"></i></button>
+      <button onclick="openMenu('side-navbar')" class="appear-sidebar"><i class="fa fa-bars"></i></button>
     </div>
     <div class="logo-top-navbar">
-      <a onclick="getDashboardLink()"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png"/></a>
+      <a onclick="getLink('dashboard')"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png"/></a>
     </div>
     <div class="logout-top-navbar" id="logout-top-navbar">
-      <button onclick="openUserMenu()" id="logout-top-navbar-button">
+      <button onclick="openMenu('userMenu')" id="logout-top-navbar-button">
         <i class="fa fa-caret-down"></i>
       </button>
     </div>
   </div>
   <div class="dashboard-body">
-    <div class="userMenu" hidden>
+    <div class="userMenu" id="userMenu" hidden>
       <ul>
-        <li><a onclick="getEditUserLink()"> Editar perfil</a></li>
+        <li><a onclick="getLink('editUser')"> Editar perfil</a></li>
         <li><a href="../login.html">Logout</a></li>
       </ul>
     </div>
-    <div class="side-navbar">
+    <div class="side-navbar" id="side-navbar">
       <ul class="list-side-navbar">
-        <li><a onclick="getDashboardLink()"><b>Dashboard</b></a></li>
-        <li><a onclick='openSubCat("cad")'> <b>Cadastros</b> <i class='fa fa-caret-down'></i></a>
+        <li><a onclick="getLink('dashboard')"><b>Dashboard</b></a></li>
+        <li><a onclick='openMenu("cad")'> <b>Cadastros</b> <i class='fa fa-caret-down'></i></a>
           <ul class="subcat" id="cad" hidden>
             <li class="subCategory"><a onclick="toggleBetween('companies-content')">Empresas</a></li>
-            <li class="subCategory"><a onclick="getDashboardLink()">Usuários</a></li>
+            <li class="subCategory"><a onclick="getLink('dashboard')">Usuários</a></li>
           </ul>
         </li>
 
-        <li><a onclick="getDashboardLink()"><b>Estudo de Viabilidade</b></a></li>
-        <li><a onclick="openSubCat('trans')"><b>Transações </b><i class='fa fa-caret-down'></i></a>
+        <li><a onclick="getLink('dashboard')"><b>Estudo de Viabilidade</b></a></li>
+        <li><a onclick="openMenu('trans')"><b>Transações </b><i class='fa fa-caret-down'></i></a>
           <ul class="subt" id="trans" hidden>
-            <li class="subCategory"><a onclick="getDashboardLink()">Minhas Transações</a></li>
-            <li class="subCategory"><a onclick="getDashboardLink()">Transações de Clientes</a></li>
+            <li class="subCategory"><a onclick="getLink('dashboard')">Minhas Transações</a></li>
+            <li class="subCategory"><a onclick="getLink('dashboard')">Transações de Clientes</a></li>
           </ul>
         </li>
 

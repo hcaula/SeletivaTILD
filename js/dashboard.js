@@ -24,23 +24,6 @@ news.forEach(function(nw, i){
   newsDOM.innerHTML += s;
 });
 
-var openUserMenu = function(){
-  userMenu.toggle("slow");
-}
-
-var openSubCat = function(menu){
-  $("#"+menu).toggle("fast");
-}
-
-var getDashboardLink = function(){
-  window.location = "./dashboard.html#"+loggedUser.id.toString();
-  location.reload();
-}
-
-var getEditUserLink = function(){
-  window.location = "./editUser.html#"+loggedUser.id.toString();
-}
-
 curPage = 'dashboard-content'
 var toggleBetween = function(change){
   if(curPage != change){

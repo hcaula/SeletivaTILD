@@ -49,6 +49,10 @@ var hasSideNavBar = function() {
 }
 
 /* Animates sidebar (mobile only) */
-var showSidebar = function(){
-  sideNavbar.toggle("slow");
+var openMenu = function(id){
+  $('#'+id).toggle("slow");
+}
+
+var getLink = function(location){
+  window.location = "./"+location+".html#"+loggedUser.id.toString();
 }
