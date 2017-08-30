@@ -40,13 +40,20 @@ var initializeLogin = function(){
   division = $(".division");
   login_box = $(".login-box");
   errorJQ = $(".error");
+  $("body").hide();
 
 
   /*
    * For better visualization, do intial things only when
    * the background image fully loads
   */
+
+  /* By default, division line is hidden */
+  division.hide();
+  
   body.onload = function(){
+
+    $("body").show();
 
     /*
      * Set inner HTML of the division line to none
@@ -57,9 +64,9 @@ var initializeLogin = function(){
     /* Hiding the div that displays the error message */
     errorJQ.hide();
 
-    /* If the window is small, don't display the division line */
-    if(window.innerWidth < 906) division.hide();
-    else division.show();
+    /* Show division line if window is large enough */
+    if(window.innerWidth >= 906) division.show();
+
 
     /* Initially hiding elements for animation. */
     logo.hide();
