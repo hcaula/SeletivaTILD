@@ -1,4 +1,4 @@
-/* Initializing globar variables */
+/* Initializing global variables */
 var body;
 var logo;
 var division;
