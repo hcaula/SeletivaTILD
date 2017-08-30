@@ -34,7 +34,7 @@ var onSmallScreen = function() {
 }
 
 /* Asserts if page should have the sidebar or if it should be hidden */
-var hasSideNavBar = function() {
+var putSideNavBar = function() {
   if(onSmallScreen()) {
     sideNavbar.css("width", "100vw");
     topNavbarButton.show();

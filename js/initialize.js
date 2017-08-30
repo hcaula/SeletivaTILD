@@ -139,8 +139,8 @@ var initializeNavbar = function() {
 var initializeSidebar = function() {
   visibleSidebar = false;
   sideNavbar = $(".side-navbar");
-  hasSideNavBar();
-  $(window).resize(hasSideNavBar);
+  putSideNavBar();
+  $(window).resize(putSideNavBar);
 }
 
 /* end of initialize functions */
