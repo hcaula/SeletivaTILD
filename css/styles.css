@@ -395,7 +395,7 @@ ul {
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  /*overflow: auto;*/
+  overflow: auto;
   width: 100%;
 }
 
@@ -414,8 +414,8 @@ ul {
 .companies-options {
   display: flex;
   align-self: center;
-  flex-direction: column;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 80%;
 }
 
@@ -425,7 +425,7 @@ ul {
   border-radius: 30px;
   flex-direction: column;
   background-color: white;
-  margin-top: 10px;
+  margin-top: 30px;
   -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
@@ -437,7 +437,7 @@ ul {
   align-items: center;
   font-size: 20px;
   font-family: caviar;
-  height: 40px;
+  height: 50px;
 }
 
 .companies-option-description {
@@ -453,6 +453,7 @@ ul {
   border: none;
   font-size: 20px;
   outline: none;
+  cursor: pointer;
 }
 
 .companies-option-caret .fa-caret-down {

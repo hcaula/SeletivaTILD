@@ -164,10 +164,12 @@ var initializeCompanies = function(){
   addCom = $("#expand-add");
   removeCom = $("#expand-remove");
   searchCom = $("#expand-search");
+  listCom = $("#expand-list");
 
   addCom.hide();
   removeCom.hide();
   searchCom.hide();
+  listCom.hide();
 }
 
 /* end of initialize functions */
