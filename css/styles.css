@@ -292,6 +292,7 @@ ul {
   display: flex;
   justify-content: flex-start;
   padding-top: 7vh;
+  width: 100%;
 }
 
 .dashboard-content {
@@ -383,7 +384,34 @@ ul {
 .canvasjs-chart-credit {
   display: none;
 }
+
 /* end of dashboard page */
+
+/* COMPANIES PAGE */
+
+.companies-content {
+  display: flex;
+  padding-top: 20px;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  /*overflow: auto;*/
+  width: 100%;
+}
+
+.companies-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: coco-gothic;
+  font-size: 20px;
+}
+
+.test {
+  border: thin solid black;
+  height: 10vh;
+}
+/* end of companies page */
 
 /* EDIT USER */
 

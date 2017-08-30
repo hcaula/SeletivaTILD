@@ -50,7 +50,7 @@ var initializeLogin = function(){
 
   /* By default, division line is hidden */
   division.hide();
-  
+
   body.onload = function(){
 
     $("body").show();
@@ -111,6 +111,9 @@ var initializeDashboard = function() {
   todoDOM = document.getElementById("todo-list");
   newsDOM = document.getElementById("news-list");
   curPage = 'dashboard-content';
+
+  /* TEMPORARY FOR COMPANIES PAGE TESTS */
+  $(".dashboard-content").hide();
 
   /* Getting the content for the to do and news lists */
   todoList.forEach(function(task, i){
