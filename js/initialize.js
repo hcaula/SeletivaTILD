@@ -163,9 +163,11 @@ var initializeSidebar = function() {
 var initializeCompanies = function(){
   addCom = $("#expand-add");
   removeCom = $("#expand-remove");
+  searchCom = $("#expand-search");
 
   addCom.hide();
   removeCom.hide();
+  searchCom.hide();
 }
 
 /* end of initialize functions */

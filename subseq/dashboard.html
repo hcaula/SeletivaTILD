@@ -118,7 +118,7 @@
         <div class="companies-option" id="addCompany">
           <div class="companies-option-title">
             <div class="companies-option-description">
-              <i class="fa fa-plus"></i> Adicionar empresa
+              <i class="fa fa-plus"></i> Adicionar
             </div>
             <div class="companies-option-caret">
               <button onclick="openMenu('expand-add', 'caret-expand-add')"><i class="fa fa-caret-down caret-expand-add"></i></button>
@@ -145,7 +145,7 @@
                 <input class="fa-input" type="tel" name="phone" id="phone" placeholder="Telefone da empresa"/>
               </div>
               <div class="button-group">
-                <button class="bttn primary-button"> <b>Salvar</b> </button>
+                <button class="bttn primary-button"> <b>Adicionar</b> </button>
               </div>
             </div>
           </div>
@@ -154,10 +154,10 @@
         <div class="companies-option" id="removeCompany">
           <div class="companies-option-title">
             <div class="companies-option-description">
-              <i class="fa fa-plus"></i> Remover empresa
+              <i class="fa fa-minus"></i> Remover
             </div>
             <div class="companies-option-caret">
-              <button onclick="openMenu('expand-remove', 'caret-expand-remove')"><i class="fa fa-caret-down caret-expand-add"></i></button>
+              <button onclick="openMenu('expand-remove', 'caret-expand-remove')"><i class="fa fa-caret-down caret-expand-remove"></i></button>
             </div>
           </div>
           <div class="companies-expand" id="expand-remove">
@@ -169,9 +169,47 @@
                 <input class="fa-input" type="text" name="compName" id="name" placeholder="Procurar empresa"/>
               </div>
               <div class="button-group">
-                <button class="bttn primary-button"> <b>Remover empresa</b> </button>
+                <button class="bttn primary-button"> <b>Procurar e remover</b> </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="companies-option" id="searchCompany">
+          <div class="companies-option-title">
+            <div class="companies-option-description">
+              <i class="fa fa-search"></i> Procurar
+            </div>
+            <div class="companies-option-caret">
+              <button onclick="openMenu('expand-search', 'caret-expand-search')"><i class="fa fa-caret-down caret-expand-search"></i></button>
+            </div>
+          </div>
+          <div class="companies-expand" id="expand-search">
+            <div class="form">
+              <div class="input-group">
+                <div class="fa-icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <input class="fa-input" type="text" name="compName" id="name" placeholder="Procurar empresa"/>
+              </div>
+              <div class="button-group">
+                <button class="bttn primary-button"> <b>Procurar</b> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="companies-option" id="listCompany">
+          <div class="companies-option-title">
+            <div class="companies-option-description">
+              <i class="fa fa-list"></i> Listar empresas
+            </div>
+            <div class="companies-option-caret">
+              <button onclick="openMenu('expand-list', 'caret-expand-list')"><i class="fa fa-caret-down caret-expand-list"></i></button>
+            </div>
+          </div>
+          <div class="companies-expand" id="expand-list">
+
           </div>
         </div>
 
