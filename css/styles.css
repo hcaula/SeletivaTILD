@@ -107,7 +107,7 @@ li a:hover {
   font-size: 20px;
 }
 
-.fa-input {
+.login-box .fa-input {
   display: flex;
   width: 200px;
   padding: 0px;
@@ -119,10 +119,6 @@ li a:hover {
   font-family: exo;
   font-size: 12px;
   outline: none;
-}
-
-.fa-input:focus {
-  border: none;
 }
 
 ::-webkit-input-placeholder {
