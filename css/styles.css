@@ -117,7 +117,7 @@ ul {
   font-size: 20px;
 }
 
-.login-box .fa-input {
+.login-box .fa-input , .companies-expand .fa-input {
   display: flex;
   width: 200px;
   padding: 0px;
@@ -425,6 +425,7 @@ ul {
   border-radius: 30px;
   flex-direction: column;
   border: thin solid black;
+  background-color: white;
 }
 
 .companies-option-title {
@@ -432,7 +433,10 @@ ul {
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   font-family: caviar;
+  background-color: white;
   height: 40px;
 }
 
@@ -457,6 +461,16 @@ ul {
 
   border: thin solid black;
 }
+
+.companies-expand .form {
+  width: 80%;
+}
+
+.companies-expand .fa-input {
+  width: 90%;
+}
+
+
 /* end of companies page */
 
 /* EDIT USER */
