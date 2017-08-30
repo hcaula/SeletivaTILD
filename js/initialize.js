@@ -10,6 +10,9 @@ var userMenu;
 var logoutDOM;
 var visibleSidebar;
 var sideNavbar;
+var todoDOM;
+var newsDOM;
+var curPage;
 
 /*
  * Initialize page function: sets the needed variables
@@ -21,12 +24,9 @@ var initialize = function(page){
     case 'login':
       initializeLogin();
       break;
-    case 'navbar':
-      initializeNavbar();
+    case 'dashboard':
+      initializeDashboard();
       break;
-    case 'sidebar':
-      initializeSidebar();
-      break
   }
 }
 
@@ -95,18 +95,50 @@ var initializeLogin = function(){
   });
 }
 
+var initializeDashboard = function() {
+  /* Getting the navbar and sidebar */
+  initializeNavbar();
+  initializeSidebar();
+
+  /* Setting the variables */
+  todoDOM = document.getElementById("todo-list");
+  newsDOM = document.getElementById("news-list");
+  curPage = 'dashboard-content';
+
+  /* Getting the content for the to do and news lists */
+  todoList.forEach(function(task, i){
+    var s;
+    if (i%2==0) s = "<li class='li-even'>";
+    else s = "<li class='li-odd'>";
+    s += "<div class='task-title'>" + task.description + "</div>";
+    s += "<div class='task-local'>" + task.local + "</div>";
+    s += "<div class='task-time'>" + task.time.toUTCString() + "</div>";
+    s += "</li>";
+    todoDOM.innerHTML += s;
+  });
+
+  news.forEach(function(nw, i){
+    var href = nw.link;
+    var s;
+    if (i%2==0) s = "<li class='li-even'>";
+    else s = "<li class='li-odd'>";
+    s += "<div class='task-title'><a href='" + href + "'>" + nw.title + "</a></div>"
+    s += "<div class='task-time'>" + nw.time.toUTCString() + "</div>";
+    s += "</li>";
+    newsDOM.innerHTML += s;
+  });
+}
+
 var initializeNavbar = function() {
   topNavbarButton = $(".button-top-navbar");
   userMenu = $(".userMenu");
   logoutDOM = document.getElementById("logout-top-navbar-button");
-
   getUsernameBttn();
 }
 
 var initializeSidebar = function() {
   visibleSidebar = false;
   sideNavbar = $(".side-navbar");
-
   hasSideNavBar();
   $(window).resize(hasSideNavBar);
 }

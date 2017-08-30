@@ -24,7 +24,6 @@ news.forEach(function(nw, i){
   newsDOM.innerHTML += s;
 });
 
-curPage = 'dashboard-content'
 var toggleBetween = function(change){
   if(curPage != change){
     $('.'+curPage).fadeOut('fast', function(){

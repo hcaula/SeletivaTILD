@@ -56,3 +56,11 @@ var openMenu = function(id){
 var getLink = function(location){
   window.location = "./"+location+".html#"+loggedUser.id.toString();
 }
+
+var toggleBetween = function(change){
+  if(curPage != change){
+    $('.'+curPage).fadeOut('fast', function(){
+      $('.'+change).fadeIn('fast');
+    });
+  }
+}
