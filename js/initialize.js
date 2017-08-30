@@ -19,6 +19,7 @@ var searchCom;
 var listCom;
 var staticEmail;
 var push;
+var companiesList;
 
 /*
  * Initialize page function: sets the needed variables
@@ -188,16 +189,27 @@ var initializeCompanies = function(){
   removeCom = $("#expand-remove");
   searchCom = $("#expand-search");
   listCom = $("#expand-list");
+  companiesList = document.getElementById('companies-list');
 
   addCom.hide();
   removeCom.hide();
   searchCom.hide();
   listCom.hide();
+
+  companies.forEach(function(company){
+    var s = '<li class="company-item">'
+    s += "<div class='company-name'>"+company.name+"</div>";
+    s += "<div class='company-cnpj'>"+company.cnpj+"</div>";
+    s += "</li>";
+    companiesList.innerHTML += s;
+  })
+
 }
 
 var initializeEditUser = function(){
   staticEmail = document.getElementById('userEmail');
   initializeNavbar();
+  initializePush();
 
   staticEmail.innerHTML = "<b>"+loggedUser.email+"</b>";
 }
