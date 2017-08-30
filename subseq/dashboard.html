@@ -40,7 +40,7 @@
     </div>
     <div class="side-navbar" id="side-navbar">
       <ul class="list-side-navbar">
-        <li><a onclick="getLink('dashboard')"><b>Dashboard</b></a></li>
+        <li><a onclick="toggleBetween('dashboard-content')"><b>Dashboard</b></a></li>
         <li><a onclick='openMenu("cad")'> <b>Cadastros</b> <i class='fa fa-caret-down'></i></a>
           <ul class="subcat" id="cad" hidden>
             <li class="subCategory"><a onclick="toggleBetween('companies-content')">Empresas</a></li>
@@ -126,8 +126,6 @@
   <script>
     initialize('dashboard');
   </script>
-
-  <script src="../js/dashboard.js"></script>
   <script src="../js/graphs.js"></script>
 </body>
 </html>

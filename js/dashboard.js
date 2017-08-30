@@ -23,11 +23,3 @@ news.forEach(function(nw, i){
   s += "</li>";
   newsDOM.innerHTML += s;
 });
-
-var toggleBetween = function(change){
-  if(curPage != change){
-    $('.'+curPage).fadeOut('fast', function(){
-      $('.'+change).fadeIn('fast');
-    });
-  }
-}

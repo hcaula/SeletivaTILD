@@ -62,5 +62,9 @@ var toggleBetween = function(change){
     $('.'+curPage).fadeOut('fast', function(){
       $('.'+change).fadeIn('fast');
     });
+    curPage = change;
+
+    /* Close navbar if the page changes */
+    if(onSmallScreen()) sideNavbar.toggle("slow");
   }
 }
