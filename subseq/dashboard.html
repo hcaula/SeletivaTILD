@@ -32,6 +32,7 @@
       </button>
     </div>
   </div>
+
   <div class="dashboard-body">
     <div class="userMenu" id="userMenu" hidden>
       <ul>
@@ -39,6 +40,21 @@
         <li><a href="../login.html">Logout</a></li>
       </ul>
     </div>
+
+    <div class="push-content">
+      <div class="push-close">
+        <button><i class="fa fa-close"></i></button>
+      </div>
+      <div class="push-info">
+        <div class="push-title">
+          <b>Almoço com Toshiba</b>
+        </div>
+        <div class="push-description">
+          Local: Palha Torrada
+        </div>
+      </div>
+    </div>
+
     <div class="side-navbar" id="side-navbar">
       <ul class="list-side-navbar">
         <li><a onclick="toggleBetween('dashboard-content')"><b>Dashboard</b></a></li>
@@ -224,5 +240,6 @@
     initialize('dashboard');
   </script>
   <script src="../js/graphs.js"></script>
+  <script src="../js/push.js"></script>
 </body>
 </html>
