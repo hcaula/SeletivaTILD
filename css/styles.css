@@ -36,11 +36,6 @@ li a:hover {
   background-attachment: fixed;
 }
 
-textarea, input {
-  border: thin solid black;
-  outline: inherit;
-}
-
 .container {
   display: flex;
   flex-direction: row;
