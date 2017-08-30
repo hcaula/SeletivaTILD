@@ -19,6 +19,7 @@ var changeTitle = function() {
 var appearPush = function(){
   push.toggle('slow');
   var audio = new Audio('../assets/sounds/notification.mp3');
+  audio.volume = 0.3;
   audio.play();
   setInterval(changeTitle, 2000);
 }
