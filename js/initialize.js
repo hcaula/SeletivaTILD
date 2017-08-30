@@ -17,6 +17,7 @@ var addCom;
 var removeCom;
 var searchCom;
 var listCom;
+var staticEmail;
 
 /*
  * Initialize page function: sets the needed variables
@@ -176,7 +177,11 @@ var initializeCompanies = function(){
 }
 
 var initializeEditUser = function(){
+  staticEmail = document.getElementById('userEmail');
   initializeNavbar();
+
+  staticEmail.innerHTML = "<b>"+loggedUser.email+"</b>";
+
 }
 
 /* end of initialize functions */

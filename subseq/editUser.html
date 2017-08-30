@@ -44,7 +44,7 @@
         <div class="title">
           Editar perfil
         </div>
-        <div class="userEmail">
+        <div class="userEmail" id="userEmail">
           Email
         </div>
         <div class="form">
@@ -52,26 +52,59 @@
             <div class="fa-icon">
               <i class="fa fa-user"></i>
             </div>
-            <input class="fa-input" type="text" name="firstName" placeholder="Nome da empresa"/>
+            <input class="fa-input" type="text" name="firstName" placeholder="Nome"/>
           </div>
           <div class="input-group">
             <div class="fa-icon">
-              <i class="fa fa-address-card"></i>
+              <i class="fa fa-users"></i>
             </div>
-            <input class="fa-input" type="tel" name="cnpj" placeholder="CNPJ"/>
+            <input class="fa-input" type="text" name="lastName" placeholder="Sobrenome"/>
           </div>
           <div class="input-group">
             <div class="fa-icon">
               <i class="fa fa-phone"></i>
             </div>
-            <input class="fa-input" type="tel" name="phone" placeholder="Telefone da empresa"/>
+            <input class="fa-input" type="tel" name="phone" placeholder="Telefone"/>
           </div>
           <div class="button-group">
-            <button class="bttn primary-button"> <b>Adicionar</b> </button>
+            <button class="bttn default-button"> <b>Cancelar</b> </button>
+            <button class="bttn primary-button"> <b>Salvar informações</b> </button>
           </div>
         </div>
       </div>
+
+      <div class="editUser-frame">
+        <div class="title">
+          Mudar senha
+        </div>
+        <div class="form">
+          <div class="input-group">
+            <div class="fa-icon">
+              <i class="fa fa-user"></i>
+            </div>
+            <input class="fa-input" type="text" name="firstName" placeholder="Nome"/>
+          </div>
+          <div class="input-group">
+            <div class="fa-icon">
+              <i class="fa fa-users"></i>
+            </div>
+            <input class="fa-input" type="text" name="lastName" placeholder="Sobrenome"/>
+          </div>
+          <div class="input-group">
+            <div class="fa-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <input class="fa-input" type="tel" name="phone" placeholder="Telefone"/>
+          </div>
+          <div class="button-group">
+            <button class="bttn default-button"> <b>Cancelar</b> </button>
+            <button class="bttn primary-button"> <b>Salvar informações</b> </button>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </div>
 
   <script>initialize('editUser')</script>
