@@ -18,6 +18,7 @@ var removeCom;
 var searchCom;
 var listCom;
 var staticEmail;
+var push;
 
 /*
  * Initialize page function: sets the needed variables
@@ -114,40 +115,45 @@ var initializeLogin = function(){
 }
 
 var initializeDashboard = function() {
-  /* Getting the navbar and sidebar */
-  initializeNavbar();
-  initializeSidebar();
 
-  /* Setting the variables */
-  todoDOM = document.getElementById("todo-list");
-  newsDOM = document.getElementById("news-list");
-  curPage = 'dashboard-content';
+  body = document.getElementById("body");
 
-  /* TEMPORARY FOR COMPANIES PAGE TESTS */
-  $(".companies-content").hide();
+  body.onload = function() {
+    /* Getting the navbar and sidebar */
+    initializeNavbar();
+    initializeSidebar();
+    initializePush();
 
-  /* Getting the content for the to do and news lists */
-  todoList.forEach(function(task, i){
-    var s;
-    if (i%2==0) s = "<li class='li-even'>";
-    else s = "<li class='li-odd'>";
-    s += "<div class='task-title'>" + task.description + "</div>";
-    s += "<div class='task-local'>" + task.local + "</div>";
-    s += "<div class='task-time'>" + task.time.toUTCString() + "</div>";
-    s += "</li>";
-    todoDOM.innerHTML += s;
-  });
+    /* Setting the variables */
+    todoDOM = document.getElementById("todo-list");
+    newsDOM = document.getElementById("news-list");
+    curPage = 'dashboard-content';
 
-  news.forEach(function(nw, i){
-    var href = nw.link;
-    var s;
-    if (i%2==0) s = "<li class='li-even'>";
-    else s = "<li class='li-odd'>";
-    s += "<div class='task-title'><a href='" + href + "'>" + nw.title + "</a></div>"
-    s += "<div class='task-time'>" + nw.time.toUTCString() + "</div>";
-    s += "</li>";
-    newsDOM.innerHTML += s;
-  });
+    $(".companies-content").hide();
+
+    /* Getting the content for the to do and news lists */
+    todoList.forEach(function(task, i){
+      var s;
+      if (i%2==0) s = "<li class='li-even'>";
+      else s = "<li class='li-odd'>";
+      s += "<div class='task-title'>" + task.description + "</div>";
+      s += "<div class='task-local'>" + task.local + "</div>";
+      s += "<div class='task-time'>" + task.time.toUTCString() + "</div>";
+      s += "</li>";
+      todoDOM.innerHTML += s;
+    });
+
+    news.forEach(function(nw, i){
+      var href = nw.link;
+      var s;
+      if (i%2==0) s = "<li class='li-even'>";
+      else s = "<li class='li-odd'>";
+      s += "<div class='task-title'><a href='" + href + "'>" + nw.title + "</a></div>"
+      s += "<div class='task-time'>" + nw.time.toUTCString() + "</div>";
+      s += "</li>";
+      newsDOM.innerHTML += s;
+    });
+  }
 }
 
 var initializeNavbar = function() {
@@ -162,6 +168,11 @@ var initializeSidebar = function() {
   sideNavbar = $(".side-navbar");
   putSideNavBar();
   $(window).resize(putSideNavBar);
+}
+
+var initializePush = function() {
+  push = $(".push-content");
+  push.hide();
 }
 
 var initializeCompanies = function(){

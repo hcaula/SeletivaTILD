@@ -18,7 +18,7 @@
   <meta charset="UTF-8">
 </head>
 
-<body>
+<body id="body">
   <div class="top-navbar">
     <div class="button-top-navbar">
       <button onclick="openMenu('side-navbar')" class="appear-sidebar"><i class="fa fa-bars"></i></button>
@@ -41,7 +41,7 @@
       </ul>
     </div>
 
-    <div class="push-content">
+    <div class="push-content" hidden>
       <div class="push-close">
         <button><i class="fa fa-close"></i></button>
       </div>
@@ -123,9 +123,10 @@
         <div class="chart" id="loss">
         </div>
       </div>
+      <script>initialize('dashboard');</script>
     </div>
 
-    <div class="companies-content">
+    <div class="companies-content" hidden>
       <div class="companies-title">
         <div class="title">
           <b>Empresas</b>
@@ -235,10 +236,6 @@
     </div>
 
   </div>
-
-  <script>
-    initialize('dashboard');
-  </script>
   <script src="../js/graphs.js"></script>
   <script src="../js/push.js"></script>
 </body>
