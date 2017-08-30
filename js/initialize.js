@@ -13,6 +13,10 @@ var sideNavbar;
 var todoDOM;
 var newsDOM;
 var curPage;
+var addCom;
+var removeCom;
+var searchCom;
+var listCom;
 
 /*
  * Initialize page function: sets the needed variables
@@ -26,6 +30,9 @@ var initialize = function(page){
       break;
     case 'dashboard':
       initializeDashboard();
+      break;
+    case 'companies':
+      initializeCompanies();
       break;
   }
 }
@@ -151,6 +158,12 @@ var initializeSidebar = function() {
   sideNavbar = $(".side-navbar");
   putSideNavBar();
   $(window).resize(putSideNavBar);
+}
+
+var initializeCompanies = function(){
+  addCom = $("#expand-add");
+
+  addCom.hide();
 }
 
 /* end of initialize functions */
