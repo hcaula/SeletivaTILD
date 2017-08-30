@@ -162,8 +162,10 @@ var initializeSidebar = function() {
 
 var initializeCompanies = function(){
   addCom = $("#expand-add");
+  removeCom = $("#expand-remove");
 
   addCom.hide();
+  removeCom.hide();
 }
 
 /* end of initialize functions */

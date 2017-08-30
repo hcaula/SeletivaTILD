@@ -145,8 +145,31 @@
                 <input class="fa-input" type="tel" name="phone" id="phone" placeholder="Telefone da empresa"/>
               </div>
               <div class="button-group">
-                <button class="bttn default-button"> <b>Voltar</b> </button>
                 <button class="bttn primary-button"> <b>Salvar</b> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="companies-option" id="removeCompany">
+          <div class="companies-option-title">
+            <div class="companies-option-description">
+              <i class="fa fa-plus"></i> Remover empresa
+            </div>
+            <div class="companies-option-caret">
+              <button onclick="openMenu('expand-remove', 'caret-expand-remove')"><i class="fa fa-caret-down caret-expand-add"></i></button>
+            </div>
+          </div>
+          <div class="companies-expand" id="expand-remove">
+            <div class="form">
+              <div class="input-group">
+                <div class="fa-icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <input class="fa-input" type="text" name="compName" id="name" placeholder="Procurar empresa"/>
+              </div>
+              <div class="button-group">
+                <button class="bttn primary-button"> <b>Remover empresa</b> </button>
               </div>
             </div>
           </div>
