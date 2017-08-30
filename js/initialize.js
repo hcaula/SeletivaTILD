@@ -181,7 +181,6 @@ var initializeEditUser = function(){
   initializeNavbar();
 
   staticEmail.innerHTML = "<b>"+loggedUser.email+"</b>";
-
 }
 
 /* end of initialize functions */
