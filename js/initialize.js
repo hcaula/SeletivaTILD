@@ -196,10 +196,13 @@ var initializeCompanies = function(){
   searchCom.hide();
   listCom.hide();
 
-  companies.forEach(function(company){
-    var s = '<li class="company-item">'
-    s += "<div class='company-name'>"+company.name+"</div>";
-    s += "<div class='company-cnpj'>"+company.cnpj+"</div>";
+  companies.forEach(function(company, i){
+    var s;
+    if (i%2==0) s = "<li class='li-even'>";
+    else s = "<li class='li-odd'>";
+    s += "<div class='task-title'>" + company.name + "</div>";
+    s += "<div class='task-local'>" + company.cnpj + "</div>";
+    s += "<div class='task-time'>" + company.phone + "</div>";
     s += "</li>";
     companiesList.innerHTML += s;
   })

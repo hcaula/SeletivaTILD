@@ -260,7 +260,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   position: absolute;
   background-color: rgba(255, 20, 20, 0.8);
   margin-top: 40px;
@@ -513,6 +514,23 @@ ul {
   min-width: 80%;
 }
 
+#expand-list {
+  max-height: 30vh;
+}
+
+ .companies-expand .scrollable-area {
+  width: 80%;
+  height: 25vh;
+  font-family: Arial;
+
+  -webkit-box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.companies-expand li {
+  padding: 10px;
+}
 
 /* end of companies page */
 
