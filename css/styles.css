@@ -364,6 +364,11 @@ ul {
   cursor: pointer;
 }
 
+.scrollable-area {
+  overflow-y: scroll;
+  height: 80%;
+}
+
 .li-even {
   background-color: #d0d8e5;
 }
