@@ -3,6 +3,8 @@ var title = document.getElementById("title");
 var oriTitle = title.innerHTML;
 var curTitle = oriTitle;
 
+var interval;
+
 /* This message is changeble */
 var pushMessage = "Almoço com Toshiba";
 
@@ -24,7 +26,7 @@ var appearPush = function(){
   var audio = new Audio('../assets/sounds/notification.mp3');
   audio.volume = 0.3;
   audio.play();
-  var interval = setInterval(changeTitle, 2000);
+  interval = setInterval(changeTitle, 2000);
 }
 
 setInterval(appearPush, 60000);
