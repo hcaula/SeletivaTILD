@@ -24,7 +24,7 @@ var appearPush = function(){
   var audio = new Audio('../assets/sounds/notification.mp3');
   audio.volume = 0.3;
   audio.play();
-  setInterval(function(){changeTitle()}, 2000);
+  var interval = setInterval(changeTitle, 2000);
 }
 
 setInterval(appearPush, 60000);
@@ -33,5 +33,5 @@ setInterval(appearPush, 60000);
 var closePush = function() {
   push.toggle('slow');
   document.title = oriTitle;
-  clearInterval(changeTitle);
+  clearInterval(interval);
 }
