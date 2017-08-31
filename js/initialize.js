@@ -58,7 +58,7 @@ var initializeLogin = function(){
     errorJQ.hide();
 
     /* Show division line if window is large enough */
-    if(window.innerWidth >= 906) division.show();
+    if(window.innerWidth >= 1025) division.show();
 
 
     /* Initially hiding elements for animation. */
@@ -78,7 +78,7 @@ var initializeLogin = function(){
    * the division can or cannot be there.
   */
   $(window).resize(function() {
-    if(window.innerWidth < 906) division.hide();
+    if(window.innerWidth < 1025) division.hide();
     else if (!focused) division.show();
   });
 
