@@ -9,12 +9,12 @@ para fazer login (ou vá para o endereço ./subseq/dashboard.html).
 
 ## Database
 ``
-Email: admin
+Email: admin<br>
 Senha: pass
 ``
 <br>
 ``
-Email: hcaula@hotmail.com
+Email: hcaula@hotmail.com<br>
 Senha: pass
 ``
 
