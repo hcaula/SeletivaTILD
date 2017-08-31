@@ -8,11 +8,12 @@ A página inicial está na root do projeto: ``login.html``. Utilize os dados da 
 para fazer login (ou vá para o endereço ./subseq/dashboard.html).
 
 ## Database
-- Email: admin
-- Senha: pass
+``Email: admin
+Senha: pass``
 <br>
-- Email: hcaula@hotmail.com
-- Senha: pass
+``Email: hcaula@hotmail.com
+Senha: pass
+``
 
 ## Push notifications
 A cada minuto, uma caixa de notificação e um áudio tocará.
@@ -52,6 +53,7 @@ do design das páginas.
 
 ## Autor
 Henrique Caúla<br>
-Graduando em Ciência da Computação
-Universidade Federal de Pernambuco, Centro de Informática
+Graduando em Ciência da Computação<br>
+Universidade Federal de Pernambuco<br>
+Centro de Informática<br>
 lhtc@cin.ufpe.br
