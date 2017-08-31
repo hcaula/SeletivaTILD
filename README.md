@@ -8,10 +8,13 @@ A página inicial está na root do projeto: ``login.html``. Utilize os dados da 
 para fazer login (ou vá para o endereço ./subseq/dashboard.html).
 
 ## Database
-``Email: admin
-Senha: pass``
+``
+Email: admin
+Senha: pass
+``
 <br>
-``Email: hcaula@hotmail.com
+``
+Email: hcaula@hotmail.com
 Senha: pass
 ``
 
