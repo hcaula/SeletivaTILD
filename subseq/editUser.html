@@ -17,12 +17,15 @@
 </head>
 
 <body>
+
+  <!-- NAVBAR HTML -->
+
   <div class="top-navbar">
     <div class="button-top-navbar">
       <button onclick="getLink('dashboard')" class="appear-sidebar editUserSide"> <i class="fa fa-caret-left"></i> Voltar </button>
     </div>
     <div class="logo-top-navbar">
-      <a onclick="toggleBetween('dashboard-content')"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png" alt="../assets/imgs/logo.png"/></a>
+      <a onclick="getLink('dashboard')"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png" alt="../assets/imgs/logo.png"/></a>
     </div>
     <div class="logout-top-navbar" id="logout-top-navbar">
       <button onclick="openMenu('userMenu', 'caret-userMenu')" id="logout-top-navbar-button">
@@ -30,15 +33,22 @@
       </button>
     </div>
   </div>
+
+  <!-- end of navbar html -->
+
+
   <div class="dashboard-body">
+
+    <!-- USER OPTIONS MENU HTML -->
     <div class="userMenu" id="userMenu" hidden>
       <ul>
         <li><a onclick="getLink('editUser')"> Editar perfil</a></li>
         <li><a href="../login.html">Logout</a></li>
       </ul>
     </div>
+    <!-- end of user options menu -->
 
-
+    <!-- PUSH NOTIFICATION BOX HTML -->
     <div class="push-content" id="push-content" hidden>
       <div class="push-close">
         <button onclick="closePush()"><i class="fa fa-close"></i></button>
@@ -52,7 +62,9 @@
         </div>
       </div>
     </div>
+    <!-- end of push notification html -->
 
+    <!-- MAIN EDIT USER PAGE -->
     <div class="editUser-content">
 
       <div class="editUser-frame">
@@ -117,6 +129,8 @@
       </div>
 
     </div>
+
+    <!-- end of main edit user page -->
 
   </div>
 

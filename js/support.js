@@ -65,11 +65,13 @@ var openMenu = function(id, carret){
   }
 }
 
+/* So the user id can be passed along between pages */
 var getLink = function(location){
   window.location = "./"+location+".html#"+loggedUser.id.toString();
 }
 
-var toggleBetween = function(change){
+/* Function called to change pages within the main page */
+var toggleBetween = function(change, fromLogo){
   if(curPage != change){
     $('.'+curPage).fadeOut('fast', function(){
       $('.'+change).fadeIn('fast');
@@ -77,6 +79,6 @@ var toggleBetween = function(change){
     curPage = change;
 
     /* Close navbar if the page changes */
-    if(onSmallScreen()) sideNavbar.toggle("slow");
+    if(onSmallScreen() && !fromLogo) sideNavbar.toggle("slow");
   }
 }

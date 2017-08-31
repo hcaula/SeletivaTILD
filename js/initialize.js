@@ -1,25 +1,5 @@
-/* Initializing global variables */
-var body;
-var logo;
-var division;
-var login_box;
-var errorJQ;
-var topNavbarButton;
-var sideNavbar;
-var userMenu;
-var logoutDOM;
-var visibleSidebar;
-var sideNavbar;
-var todoDOM;
-var newsDOM;
-var curPage;
-var addCom;
-var removeCom;
-var searchCom;
-var listCom;
-var staticEmail;
-var push;
-var companiesList;
+/* Initializing global variables (uglified) */
+var body,logo,division,login_box,errorJQ,topNavbarButton,sideNavbar,userMenu,logoutDOM,visibleSidebar,sideNavbar,todoDOM,newsDOM,curPage,addCom,removeCom,searchCom,listCom,staticEmail,push,companiesList;
 
 /*
  * Initialize page function: sets the needed variables
@@ -117,10 +97,12 @@ var initializeLogin = function(){
 
 var initializeDashboard = function() {
 
+  /* Same as above: if something takes time to load, better wait */
   body = document.getElementById("body");
 
   body.onload = function() {
-    /* Getting the navbar and sidebar */
+
+    /* Getting the navbar, sidebar and push notification */
     initializeNavbar();
     initializeSidebar();
     initializePush();
@@ -130,6 +112,7 @@ var initializeDashboard = function() {
     newsDOM = document.getElementById("news-list");
     curPage = 'dashboard-content';
 
+    /* Initially hiding the companies part */
     $(".companies-content").hide();
 
     /* Getting the content for the to do and news lists */
@@ -157,6 +140,7 @@ var initializeDashboard = function() {
   }
 }
 
+/* Navbar initialzing */
 var initializeNavbar = function() {
   topNavbarButton = $(".button-top-navbar");
   userMenu = $(".userMenu");
@@ -172,6 +156,8 @@ var initializeNavbar = function() {
 });
 }
 
+
+/* Sidebar initializing */
 var initializeSidebar = function() {
   visibleSidebar = false;
   sideNavbar = $(".side-navbar");
@@ -179,11 +165,13 @@ var initializeSidebar = function() {
   $(window).resize(putSideNavBar);
 }
 
+/* Push notification initiazing */
 var initializePush = function() {
   push = $(".push-content");
   push.hide();
 }
 
+/* Comapanies intializing */
 var initializeCompanies = function(){
   addCom = $("#expand-add");
   removeCom = $("#expand-remove");
@@ -191,11 +179,13 @@ var initializeCompanies = function(){
   listCom = $("#expand-list");
   companiesList = document.getElementById('companies-list');
 
+  /* Hiding the expandable parts */
   addCom.hide();
   removeCom.hide();
   searchCom.hide();
   listCom.hide();
 
+  /* Getting companies information */
   companies.forEach(function(company, i){
     var s;
     if (i%2==0) s = "<li class='li-even'>";
@@ -209,11 +199,13 @@ var initializeCompanies = function(){
 
 }
 
+/* Edit user intializing */
 var initializeEditUser = function(){
   staticEmail = document.getElementById('userEmail');
   initializeNavbar();
   initializePush();
 
+  /* Getting the logged user email */
   staticEmail.innerHTML = "<b>"+loggedUser.email+"</b>";
 }
 

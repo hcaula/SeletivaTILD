@@ -74,8 +74,6 @@ ul {
   border-radius: 5px;
   position: relative;
   background-color: rgba(247, 246, 244, 0.85);
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -86,7 +84,6 @@ ul {
 #logo {
   width: 40%;
   height: 40%;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
 
@@ -152,8 +149,6 @@ ul {
   font-size: 15px;
   margin: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.38);
-  -moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.38);
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.38);
 
 }
@@ -187,8 +182,6 @@ ul {
   z-index: 10;
   background-color: #051d42;
 
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -204,7 +197,6 @@ ul {
   justify-content: center;
   margin-left: 20px;
 
-  -webkit-filter: drop-shadow(3px 3px 3px black);
   filter: drop-shadow(3px 3px 3px black);
 }
 
@@ -267,6 +259,7 @@ ul {
   margin-top: 40px;
   right: 0;
   width: 350px;
+  max-width: 90vw;
   padding: 12px;
 }
 
@@ -351,8 +344,6 @@ ul {
   width: 250px;
   background-color: white;
 
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -466,8 +457,6 @@ ul {
   flex-direction: column;
   background-color: white;
   margin-top: 30px;
-  -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -518,13 +507,11 @@ ul {
   max-height: 30vh;
 }
 
- .companies-expand .scrollable-area {
+#sa-companies-list {
   width: 80%;
   height: 25vh;
   font-family: Arial;
 
-  -webkit-box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,0.75);
   box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -554,8 +541,6 @@ ul {
   border-radius: 20px;
   background-color: white;
 
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 

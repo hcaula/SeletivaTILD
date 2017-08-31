@@ -2,6 +2,8 @@ var getRandom = function(){
   return Math.floor((Math.random() * 100));
 }
 
+
+/* Random values charts */
 var sales = new CanvasJS.Chart("sales", {
   data:
   [

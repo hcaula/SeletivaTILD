@@ -20,12 +20,15 @@
 </head>
 
 <body id="body">
+
+  <!-- NAVBAR HTML -->
+
   <div class="top-navbar">
     <div class="button-top-navbar">
       <button onclick="openMenu('side-navbar')" class="appear-sidebar"><i class="fa fa-bars"></i></button>
     </div>
     <div class="logo-top-navbar">
-      <a onclick="toggleBetween('dashboard-content')"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png" alt="../assets/imgs/logo.png"/></a>
+      <a onclick="toggleBetween('dashboard-content', true)"> <img class="logo-navbar" src="../assets/imgs/logo-icon.png" alt="../assets/imgs/logo.png"/></a>
     </div>
     <div class="logout-top-navbar" id="logout-top-navbar">
       <button onclick="openMenu('userMenu', 'caret-userMenu')" id="logout-top-navbar-button">
@@ -34,15 +37,23 @@
     </div>
   </div>
 
+  <!-- end of navbar html -->
+
+  <!-- MAIN PAGE LAYOUT HTML -->
   <div class="dashboard-body">
+
+    <!-- USER OPTIONS MENU HTML -->
     <div class="userMenu" id="userMenu" hidden>
       <ul>
         <li><a onclick="getLink('editUser')"> Editar perfil</a></li>
         <li><a href="../login.html">Logout</a></li>
       </ul>
     </div>
+    <!-- end of user options menu html -->
 
+    <!-- PUSH NOTIFICATION BOX HTML -->
     <div class="push-content" id="push-content" hidden>
+      <script> $('.push-content').hide()</script>
       <div class="push-close">
         <button onclick="closePush()"><i class="fa fa-close"></i></button>
       </div>
@@ -55,8 +66,14 @@
         </div>
       </div>
     </div>
+    <!-- end of push notification box html -->
+
+    <!-- SIDE NAVBAR HTML -->
 
     <div class="side-navbar" id="side-navbar">
+      <script>
+        if(onSmallScreen()) $('.side-navbar').hide();
+      </script>
       <ul class="list-side-navbar">
         <li><a onclick="toggleBetween('dashboard-content')"><b>Dashboard</b></a></li>
         <li><a onclick='openMenu("cad", "caret-cad")'> <b>Cadastros</b> <i class='fa fa-caret-down caret-cad'></i></a>
@@ -65,7 +82,6 @@
             <li class="subCategory"><a onclick="getLink('dashboard')">Usuários</a></li>
           </ul>
         </li>
-
         <li><a onclick="getLink('dashboard')"><b>Estudo de Viabilidade</b></a></li>
         <li><a onclick="openMenu('trans', 'caret-trans')"><b>Transações </b><i class='fa fa-caret-down caret-trans'></i></a>
           <ul class="subt" id="trans" hidden>
@@ -73,9 +89,12 @@
             <li class="subCategory"><a onclick="getLink('dashboard')">Transações de Clientes</a></li>
           </ul>
         </li>
-
       </ul>
     </div>
+
+    <!-- end of side navbar html -->
+
+    <!-- DASHBOARD CONTENT HTML -->
 
     <div class="dashboard-content">
       <div class="dashboard-frame" id="todo-frame">
@@ -127,7 +146,12 @@
       <script>initialize('dashboard');</script>
     </div>
 
+    <!-- end of dashboard content html -->
+
+    <!-- COMPANIES HTML -->
+
     <div class="companies-content" hidden>
+      <script> $('.companies-content').hide()</script>
       <div class="companies-title">
         <div class="title">
           <b>Empresas</b>
@@ -228,16 +252,16 @@
             </div>
           </div>
           <div class="companies-expand" id="expand-list">
-            <div class="scrollable-area">
-              <ul "companies-list" id="companies-list">
+            <div class="scrollable-area" id="sa-companies-list">
+              <ul class="companies-list" id="companies-list"></ul>
             </div>
-            </ul>
           </div>
         </div>
 
       </div>
       <script>initialize('companies');</script>
     </div>
+    <!-- end of companies -->
 
   </div>
   <script src="../js/graphs.js"></script>
