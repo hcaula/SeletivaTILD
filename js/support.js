@@ -29,7 +29,7 @@ var getUsernameBttn = function() {
 
 /* Verifies if user is on mobile (values colected via testing) */
 var onSmallScreen = function() {
-  if(window.innerWidth < 500) return true;
+  if(window.innerWidth < 900) return true;
   else return false;
 }
 
